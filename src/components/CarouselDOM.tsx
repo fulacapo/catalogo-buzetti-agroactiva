@@ -5,15 +5,22 @@ import { cn } from '../lib/utils';
 // Motivo: en la PC del stand (Windows 7 + Intel HD viejo) Chrome suele tener la
 // aceleración por GPU deshabilitada, y las texturas de WebGL no cargan. Con <img>
 // normales las imágenes cargan siempre. Mantiene el look "showroom oscuro".
+//
+// Totalmente usable con mouse/touch: tocar una pieza al costado la trae al centro;
+// tocar la pieza activa abre/cierra su ficha.
 // ─────────────────────────────────────────────────────────────────────────────
 interface Props {
   products: any[];
   activeIndex: number;
   /** Atenúa todo el carrusel (cuando hay un menú encima). */
   dimmed?: boolean;
+  /** Clic en una tarjeta del costado → traerla al centro. */
+  onSelect?: (index: number) => void;
+  /** Clic en la tarjeta activa → abrir/cerrar la ficha. */
+  onOpenActive?: () => void;
 }
 
-export function CarouselDOM({ products, activeIndex, dimmed = false }: Props) {
+export function CarouselDOM({ products, activeIndex, dimmed = false, onSelect, onOpenActive }: Props) {
   // Sólo renderizar una ventana alrededor de la activa (rendimiento).
   const WINDOW = 3;
 
@@ -41,17 +48,23 @@ export function CarouselDOM({ products, activeIndex, dimmed = false }: Props) {
           const cardOpacity = dimmed ? 0.25 : Math.abs(offset) >= 3 ? 0 : isActive ? 1 : 0.5;
 
           return (
-            <div
+            <button
               key={product.codigo ?? index}
-              className="absolute transition-all duration-500 ease-out will-change-transform"
+              onClick={() => {
+                if (dimmed) return;
+                if (isActive) onOpenActive?.();
+                else onSelect?.(index);
+              }}
+              className="absolute transition-all duration-500 ease-out will-change-transform cursor-pointer focus:outline-none"
               style={{
                 transform: `translateX(${tx}vw) scale(${scale})`,
                 opacity: cardOpacity,
                 zIndex: 100 - Math.abs(offset),
+                pointerEvents: dimmed || Math.abs(offset) > WINDOW ? 'none' : 'auto',
               }}
             >
               <Card product={product} isActive={isActive && !dimmed} />
-            </div>
+            </button>
           );
         })}
       </div>
@@ -63,7 +76,7 @@ function Card({ product, isActive }: { product: any; isActive: boolean }) {
   return (
     <div
       className={cn(
-        'flex flex-col rounded-3xl border-2 overflow-hidden shadow-2xl transition-all duration-500',
+        'flex flex-col rounded-3xl border-2 overflow-hidden shadow-2xl transition-all duration-500 text-left',
         'bg-[#142438]',
         isActive
           ? 'border-cyan-300 shadow-[0_0_70px_-10px_rgba(0,180,216,0.8)]'
@@ -101,8 +114,8 @@ function Card({ product, isActive }: { product: any; isActive: boolean }) {
           {product.descripcion}
         </p>
         {isActive && (
-          <p className="text-sm font-mono font-bold text-cyan-400 mt-3 animate-pulse">
-            PELLIZCÁ PARA VER LA FICHA
+          <p className="text-sm font-mono font-bold text-cyan-400 mt-3">
+            TOCÁ PARA VER LA FICHA
           </p>
         )}
       </div>

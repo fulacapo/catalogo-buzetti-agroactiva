@@ -219,9 +219,11 @@ export function FeaturedExplorer({ visible, handPos, pinchCount, gesture, onClos
           </div>
 
           {/* COLUMNA CENTRAL: Visor de imagen (con zoom) */}
-          <div className={cn(
+          <div
+            onClick={() => { if (active) setZoom(null); }}
+            className={cn(
             "relative h-full max-h-[72vh] transition-all duration-500 flex items-center justify-center overflow-hidden",
-            active ? "w-[34%]" : "w-full"
+            active ? "w-[34%] cursor-zoom-out" : "w-full"
           )}>
             <div
               className="relative transition-transform duration-700 ease-out flex items-center justify-center"
@@ -295,8 +297,8 @@ export function FeaturedExplorer({ visible, handPos, pinchCount, gesture, onClos
       <div className="relative shrink-0 pb-6 text-center">
         <p className="text-base font-mono text-slate-300 font-semibold">
           {active
-            ? 'Pellizque o abra la mano para volver a la vista completa'
-            : 'Apunte a un punto y pellizque para acercar · teclas 1 / 2 / 3'}
+            ? 'Tocá la imagen para volver a la vista completa'
+            : 'Tocá un punto + para acercar · o teclas 1 / 2 / 3'}
         </p>
       </div>
 

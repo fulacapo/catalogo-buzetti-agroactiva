@@ -100,6 +100,8 @@ export default function App() {
   const openDetails = useCallback(() => { touch(); setShowDetails(true); }, []);
   const closeDetails = useCallback(() => { touch(); setShowDetails(false); }, []);
   const toggleFicha = useCallback(() => { touch(); setIsIdle(false); setShowDetails(s => !s); }, []);
+  // Clic/touch en una tarjeta del costado → traerla al centro.
+  const goTo = useCallback((i: number) => { touch(); setIsIdle(false); setActiveIndex(i); setShowDetails(false); }, []);
 
   const selectCategory = useCallback((name: string) => {
     touch();
@@ -355,7 +357,7 @@ export default function App() {
       </div>
 
       {/* Carrusel de productos (HTML/CSS — sin WebGL, anda en cualquier PC) */}
-      <CarouselDOM products={displayProducts} activeIndex={activeIndex} dimmed={menuVisible || brandVisible} />
+      <CarouselDOM products={displayProducts} activeIndex={activeIndex} dimmed={menuVisible || brandVisible} onSelect={goTo} onOpenActive={toggleFicha} />
 
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 p-6 z-10 flex justify-between items-center pointer-events-none">
@@ -455,7 +457,7 @@ export default function App() {
                 'inline-flex items-center gap-2 text-base font-mono font-bold transition-colors',
                 heroHovered ? 'text-amber-300' : 'text-amber-400/80'
               )}>
-                <Sparkles className="w-5 h-5" /> Pellizque para explorar las partes →
+                <Sparkles className="w-5 h-5" /> Tocá para explorar las partes →
               </span>
             </div>
           </div>
@@ -501,7 +503,7 @@ export default function App() {
         </div>
 
         <p className="text-base font-mono text-slate-200 font-semibold shrink-0">
-          Apunte con la mano y pellizque · o presione 1 / 2 / 3
+          Tocá una opción · o presioná 1 / 2 / 3
         </p>
       </div>
 
@@ -527,11 +529,11 @@ export default function App() {
       {view === 'catalog' && !isIdle && (
         <div className="absolute left-6 top-28 w-64 rounded-2xl p-5 flex flex-col gap-3.5 z-10 border-2 border-white/15 bg-[#0a1626]/95 shadow-xl text-slate-100 pointer-events-auto">
           <h3 className="text-[11px] font-mono text-cyan-400 font-bold uppercase tracking-widest border-b border-white/10 pb-2">Cómo navegar</h3>
-          <GuideRow icon={<ArrowLeftRight className="w-4 h-4" />} title="Cambiar pieza" desc="Deslice la mano izquierda o derecha." />
-          <GuideRow icon={<Hand className="w-4 h-4" />} title="Ver ficha" desc="Pellizque (índice + pulgar)." />
-          <GuideRow icon={<Minimize className="w-4 h-4" />} title="Cerrar ficha" desc="Abra la mano frente a la cámara." />
+          <GuideRow icon={<ArrowLeftRight className="w-4 h-4" />} title="Cambiar pieza" desc="Tocá una pieza al costado, o usá las flechas ‹ ›." />
+          <GuideRow icon={<Info className="w-4 h-4" />} title="Ver ficha" desc="Tocá la pieza del centro, o el botón FICHA." />
+          <GuideRow icon={<LayoutGrid className="w-4 h-4" />} title="Volver al menú" desc="Tocá el botón MENÚ abajo." />
           <div className="mt-1 p-2.5 bg-black/20 rounded-xl text-[10px] text-slate-400 font-mono">
-            Párese a ~1,5 m en zona iluminada.
+            Teclado: ← → cambiar · Enter ficha · Esc volver.
           </div>
         </div>
       )}
@@ -543,9 +545,14 @@ export default function App() {
       )}>
         {currentProduct && (
           <>
+            {/* Botón cerrar (mouse/touch) */}
+            <button onClick={closeDetails} aria-label="Cerrar ficha"
+              className="absolute top-4 right-4 z-10 w-11 h-11 flex items-center justify-center rounded-xl border-2 border-white/20 bg-white/[0.06] text-slate-200 hover:bg-cyan-400/20 hover:text-white active:scale-95 transition">
+              <Minimize className="w-5 h-5" />
+            </button>
             <div ref={scrollContainerRef} className="flex-1 overflow-y-auto pr-2 scrollbar-hide flex flex-col gap-5">
               <div>
-                <div className="inline-flex px-3 py-1.5 bg-cyan-400/15 rounded-lg text-sm font-mono text-cyan-300 border border-cyan-400/40 mb-3 font-bold uppercase tracking-wider">
+                <div className="inline-flex px-3 py-1.5 bg-cyan-400/15 rounded-lg text-sm font-mono text-cyan-300 border border-cyan-400/40 mb-3 font-bold uppercase tracking-wider mr-12">
                   {currentProduct.categoria || currentProduct.linea || 'Repuesto'}
                 </div>
                 <h2 className="text-4xl font-display font-extrabold text-white leading-tight mb-2">Ref. {currentProduct.codigo}</h2>
@@ -622,10 +629,11 @@ export default function App() {
               )}
             </div>
 
-            <div className="pt-4 mt-4 border-t border-white/10 flex justify-between items-center text-xs font-mono text-slate-400 font-bold">
-              <span>ABRE LA MANO PARA CERRAR</span>
-              <Minimize className="w-4 h-4 text-cyan-400 animate-bounce" />
-            </div>
+            <button onClick={closeDetails}
+              className="pt-4 mt-4 border-t border-white/10 flex justify-between items-center text-xs font-mono text-slate-300 font-bold w-full hover:text-white transition">
+              <span>TOCÁ AQUÍ O LA ✕ PARA CERRAR</span>
+              <Minimize className="w-4 h-4 text-cyan-400" />
+            </button>
           </>
         )}
       </div>
@@ -692,10 +700,10 @@ export default function App() {
           </div>
         </div>
         <h2 className="text-4xl font-display font-extrabold text-white tracking-tight mb-2 drop-shadow-lg">
-          Levante la mano para <span className="text-cyan-300">explorar</span>
+          Tocá la pantalla para <span className="text-cyan-300">explorar</span>
         </h2>
         <p className="text-sm font-mono uppercase tracking-[0.3em] text-cyan-300/80 animate-pulse">
-          Deslice · Pellizque · Descubra
+          Tocá · Deslizá · Descubrí
         </p>
       </div>
 

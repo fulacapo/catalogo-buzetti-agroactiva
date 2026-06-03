@@ -70,7 +70,7 @@ export function CategoryMenu({ categories, handPos, pinchCount, onSelect, visibl
           Elija una <span className="text-cyan-300">categoría</span>
         </h2>
         <p className="text-base text-slate-200 mt-3 font-mono font-semibold">
-          Apunte con la mano y pellizque · o use el teclado
+          Tocá una categoría · o usá el teclado
         </p>
       </div>
 
