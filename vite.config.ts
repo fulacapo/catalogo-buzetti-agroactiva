@@ -18,6 +18,12 @@ export default defineConfig(() => {
       cssTarget: 'chrome109',
     },
     server: {
+      // COOP/COEP: habilitan SharedArrayBuffer, que MediaPipe necesita para sus
+      // hilos WASM. Sin esto el modelo se cuelga al inicializar (gestos muertos).
+      headers: {
+        'Cross-Origin-Opener-Policy': 'same-origin',
+        'Cross-Origin-Embedder-Policy': 'require-corp',
+      },
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},

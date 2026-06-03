@@ -26,6 +26,17 @@ const DATA_DIR = path.join(BASE, 'data');
 const IMAGES_DIR = path.join(WEB_DIR, 'images');
 
 const app = express();
+
+// COOP/COEP: habilitan SharedArrayBuffer (crossOriginIsolated), que MediaPipe
+// necesita para sus hilos WASM. Sin esto el modelo se cuelga al inicializar y
+// los gestos NO funcionan. CORP same-origin para que los recursos pasen el COEP.
+app.use((_req, res, next) => {
+  res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+  res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
+  res.setHeader('Cross-Origin-Resource-Policy', 'same-origin');
+  next();
+});
+
 app.use(express.json());
 app.use('/images', express.static(IMAGES_DIR));
 

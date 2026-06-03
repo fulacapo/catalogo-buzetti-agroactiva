@@ -1,37 +1,28 @@
 @echo off
-title Catalogo Interactivo Buzetti
+title Catalogo Buzetti - MODO DEBUG
 chcp 65001 >/dev/null
 cd /d "%~dp0app"
 
 echo ============================================================
-echo    CATALOGO INTERACTIVO - AUTOPARTES JULIO O. BUZETTI S.A.
+echo    MODO DEBUG - se abre la consola (F12) para ver errores
+echo    F11 = salir de pantalla completa  |  Alt+F4 = cerrar
 echo ============================================================
 echo.
-echo  Iniciando... no cierre esta ventana mientras usa el catalogo.
-echo  Para salir: Alt+F4 cierra Chrome, luego CERRAR_CATALOGO.bat
-echo.
 
-REM --- Cerrar procesos previos (evita conflicto de puerto 3000) ---
 taskkill /F /IM node.exe >/dev/null 2>&1
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000') do taskkill /F /PID %%a >/dev/null 2>&1
 
-REM --- Levantar el servidor local ---
 start "Servidor Catalogo" /min "%~dp0app\node\node.exe" "%~dp0app\server.cjs"
-
-REM --- Esperar a que el servidor este listo ---
 ping 127.0.0.1 -n 4 >/dev/null
 
-REM --- Buscar Google Chrome ---
 set "CHROME="
 if exist "%ProgramFiles%\Google\Chrome\Application\chrome.exe" set "CHROME=%ProgramFiles%\Google\Chrome\Application\chrome.exe"
 if exist "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" set "CHROME=%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"
 if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" set "CHROME=%LocalAppData%\Google\Chrome\Application\chrome.exe"
 
-REM --- Abrir en kiosko con la camara ya autorizada ---
 if defined CHROME (
-  start "" "%CHROME%" --kiosk --use-fake-ui-for-media-stream --autoplay-policy=no-user-gesture-required --user-data-dir="%~dp0chrome-perfil" "http://localhost:3000"
+  start "" "%CHROME%" --start-fullscreen --use-fake-ui-for-media-stream --autoplay-policy=no-user-gesture-required --auto-open-devtools-for-tabs --user-data-dir="%~dp0chrome-debug" "http://localhost:3000"
 ) else (
-  echo  No se encontro Google Chrome. Abriendo navegador por defecto...
   start "" "http://localhost:3000"
 )
 exit

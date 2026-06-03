@@ -41,6 +41,19 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
   // está casi quieta (zona muerta). El cursor visual usa ref aparte y sigue fluido.
   const lastEmitRef = useRef<{ x: number, y: number } | null>(null);
 
+  // Diagnóstico visible en pantalla (tecla D) para depurar sin consola en la PC del stand.
+  const [diag, setDiag] = useState({
+    status: 'cargando', delegate: '-', camera: '-',
+    videoW: 0, videoH: 0, frames: 0, hands: 0, err: '',
+  });
+  const diagRef = useRef({ ...diag });
+  // Actualiza el ref de diagnóstico. Sólo refleja en React (re-render) cuando se
+  // pide explícitamente (push), para no spamear renders en el loop por frame.
+  const setD = (patch: Partial<typeof diag>, push = false) => {
+    diagRef.current = { ...diagRef.current, ...patch };
+    if (push) setDiag({ ...diagRef.current });
+  };
+
   // Initialize MediaPipe HandLandmarker
   useEffect(() => {
     let active = true;
@@ -60,18 +73,23 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
         // NO detecta nada (falla silenciosa). CPU no necesita WebGL y anda
         // siempre, aunque un poco más lento.
         let landmarker;
+        let usedDelegate = 'CPU';
         try {
           landmarker = await HandLandmarker.createFromOptions(vision, opts("CPU"));
-        } catch (cpuErr) {
+        } catch (cpuErr: any) {
           console.warn("Delegado CPU falló, intentando GPU:", cpuErr);
+          setD({ err: 'CPU fallo: ' + (cpuErr?.message || cpuErr) }, true);
           landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
+          usedDelegate = 'GPU';
         }
 
         if (!active) return;
         landmarkerRef.current = landmarker;
+        setD({ status: 'modelo listo', delegate: usedDelegate }, true);
         setIsInitializing(false);
       } catch (err: any) {
         console.error("Failed to initialize hand tracking:", err);
+        setD({ status: 'ERROR init', err: err?.message || String(err) }, true);
         setError(err.message || "Failed to initialize MediaPipe");
         setIsInitializing(false);
       }
@@ -231,40 +249,75 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     // el 3D dejó de comerse la GPU (sin HDRI y con tarjetas virtualizadas).
     const INFERENCE_INTERVAL_MS = 33;
 
+    let lastDiagPush = 0;
+
     async function startCamera() {
       try {
-        // Resolución baja a propósito: el modelo reescala internamente, así que
-        // 480x360 alcanza para detectar la mano y baja el costo de subir el
-        // frame a textura en GPU integrada.
-        const stream = await navigator.mediaDevices.getUserMedia({
-          video: { width: 480, height: 360, frameRate: { ideal: 30 }, facingMode: "user" }
-        });
-        
-        if (videoRef.current && active) {
-          videoRef.current.srcObject = stream;
-          videoRef.current.addEventListener('loadeddata', predictWebcam);
+        // Resolución baja a propósito: el modelo reescala internamente.
+        // Pedimos lo mínimo (sin fijar tamaño exacto) para máxima compatibilidad
+        // con webcams viejas; si falla, reintentamos con lo más básico.
+        let stream: MediaStream;
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({
+            video: { width: { ideal: 480 }, height: { ideal: 360 }, facingMode: 'user' },
+          });
+        } catch {
+          stream = await navigator.mediaDevices.getUserMedia({ video: true });
         }
+
+        if (!videoRef.current || !active) return;
+        const v = videoRef.current;
+        v.srcObject = stream;
+        v.muted = true;
+        (v as any).playsInline = true;
+
+        // Algunas webcams/Chrome viejos NO disparan 'loadeddata' a tiempo: hay que
+        // llamar play() explícito y arrancar el loop apenas haya datos.
+        try { await v.play(); } catch { /* autoplay políticas; igual seguimos */ }
+        setD({ camera: 'ok' }, true);
+
+        const begin = () => { if (active) predictWebcam(); };
+        if (v.readyState >= 2) begin();
+        else v.addEventListener('loadeddata', begin, { once: true });
+        // Respaldo: arrancar igual al segundo, por si el evento no llega.
+        setTimeout(begin, 1000);
       } catch (err: any) {
         console.error("Camera error:", err);
+        setD({ camera: 'sin permiso/ERROR', err: err?.message || String(err) }, true);
         setError("Error accessing webcam. Please allow permissions.");
       }
     }
 
     function predictWebcam() {
       if (!videoRef.current || !landmarkerRef.current || !active) return;
-      
+
       const v = videoRef.current;
       const now = performance.now();
-      
-      if (now - lastInferenceTime >= INFERENCE_INTERVAL_MS) {
+
+      if (now - lastInferenceTime >= INFERENCE_INTERVAL_MS && v.readyState >= 2 && v.videoWidth > 0) {
         if (lastVideoTime !== v.currentTime) {
           lastVideoTime = v.currentTime;
-          const results = landmarkerRef.current.detectForVideo(v, now);
-          processLandmarks(results);
+          try {
+            const results = landmarkerRef.current.detectForVideo(v, now);
+            processLandmarks(results);
+            setD({
+              videoW: v.videoWidth, videoH: v.videoHeight,
+              frames: diagRef.current.frames + 1,
+              hands: results.landmarks.length,
+            });
+          } catch (e: any) {
+            setD({ err: 'detect: ' + (e?.message || e) });
+          }
           lastInferenceTime = now;
         }
       }
-      
+
+      // Empujar el diagnóstico a React ~2 veces por segundo (sin spamear renders).
+      if (now - lastDiagPush > 500) {
+        lastDiagPush = now;
+        setDiag({ ...diagRef.current });
+      }
+
       animationFrameRef.current = requestAnimationFrame(predictWebcam);
     }
 
@@ -284,5 +337,5 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     };
   }, [enabled, isInitializing, error, processLandmarks]);
 
-  return { videoRef, gesture, isInitializing, error, handPos };
+  return { videoRef, gesture, isInitializing, error, handPos, diag };
 }

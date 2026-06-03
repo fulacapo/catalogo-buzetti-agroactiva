@@ -35,9 +35,10 @@ export default function App() {
   const lastActivityRef = useRef<number>(Date.now());
 
   const [cameraEnabled, setCameraEnabled] = useState(true);
+  const [showDiag, setShowDiag] = useState(false); // panel de diagnóstico (tecla D)
   const cursorRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const { videoRef, gesture, isInitializing, error, handPos } = useHandTracking(cursorRef, cameraEnabled);
+  const { videoRef, gesture, isInitializing, error, handPos, diag } = useHandTracking(cursorRef, cameraEnabled);
 
   // Load products whenever the brand changes
   useEffect(() => {
@@ -163,6 +164,8 @@ export default function App() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       touch();
+      // Tecla D: muestra/oculta el panel de diagnóstico de cámara/gestos.
+      if (e.key === 'd' || e.key === 'D') { setShowDiag(s => !s); return; }
       // Con el explorador abierto: Esc/Backspace cierra; las teclas de zoom
       // (1/2/3/0) las maneja el propio FeaturedExplorer.
       if (showFeatured) {
@@ -698,6 +701,29 @@ export default function App() {
       <div ref={cursorRef}
         className="fixed w-10 h-10 rounded-full border-2 border-cyan-400 bg-cyan-400/20 pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 opacity-0 shadow-[0_0_15px_rgba(0,180,216,0.5)]"
         style={{ left: '50%', top: '50%', willChange: 'left, top, transform' }} />
+
+      {/* ════ PANEL DE DIAGNÓSTICO (tecla D) ════ */}
+      {showDiag && (
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-[60] rounded-xl border-2 border-cyan-400/60 bg-black/90 px-5 py-3 font-mono text-sm text-cyan-100 shadow-2xl pointer-events-none">
+          <div className="text-cyan-300 font-bold mb-1.5 tracking-widest">DIAGNÓSTICO GESTOS (tecla D)</div>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-0.5">
+            <span>Modelo: <b className={diag.status.includes('listo') ? 'text-green-400' : 'text-amber-400'}>{diag.status}</b></span>
+            <span>Motor: <b className="text-white">{diag.delegate}</b></span>
+            <span>Cámara: <b className={diag.camera === 'ok' ? 'text-green-400' : 'text-amber-400'}>{diag.camera}</b></span>
+            <span>Video: <b className="text-white">{diag.videoW}×{diag.videoH}</b></span>
+            <span>Frames analizados: <b className={diag.frames > 0 ? 'text-green-400' : 'text-red-400'}>{diag.frames}</b></span>
+            <span>Manos detectadas: <b className={diag.hands > 0 ? 'text-green-400' : 'text-red-400'}>{diag.hands}</b></span>
+            <span>Gesto: <b className="text-white">{gesture}</b></span>
+            <span>Mano (x,y): <b className="text-white">{handPos ? `${handPos.x.toFixed(2)},${handPos.y.toFixed(2)}` : '—'}</b></span>
+          </div>
+          {diag.err && <div className="mt-1.5 text-red-400 max-w-[560px] break-words">⚠ {diag.err}</div>}
+          <div className="mt-1.5 text-[11px] text-slate-400">
+            {diag.frames === 0 ? 'No se analizan frames → la cámara no entrega imagen.'
+              : diag.hands === 0 ? 'Analiza frames pero no ve manos → acercá la mano, mejorá la luz.'
+              : 'Detectando manos ✓'}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
