@@ -23,8 +23,22 @@ const FEATURED = {
 type View = 'brand' | 'menu' | 'catalog';
 type Brand = 'jobuzetti' | 'diesel' | 'abfrenos';
 
+function checkWebGL() {
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
+  } catch (e) {
+    return false;
+  }
+}
+
 export default function App() {
   const [products, setProducts] = useState<any[]>([]);
+  const [webglSupported, setWebglSupported] = useState(true);
+
+  useEffect(() => {
+    setWebglSupported(checkWebGL());
+  }, []);
   const [metadata, setMetadata] = useState<any>(null);
   const [view, setView] = useState<View>('brand');
   const [brand, setBrand] = useState<Brand>('jobuzetti');
@@ -349,27 +363,67 @@ export default function App() {
         <img src="/images/Photoroom-20240731_095940.png" alt="" className="w-[60vw] h-auto object-contain invert" />
       </div>
 
-      {/* 3D Canvas */}
+      {/* 3D Canvas or 2D Fallback */}
       <div className="absolute inset-0 z-0">
-        <Canvas
-          camera={{ position: [0, 0, 8], fov: 50 }}
-          // Optimizado para GPU integrada (i5 5ª gen / Win7):
-          // sin antialias, sin supersampling (dpr=1).
-          gl={{ alpha: true, antialias: false, powerPreference: 'high-performance' }}
-          dpr={1}
-        >
-          {/* Iluminación 100% local (sin HDRI de Environment, que además se baja
-              de internet y carga la GPU). Más luces compensan el reflejo perdido. */}
-          <ambientLight intensity={0.7} />
-          <spotLight position={[6, 12, 8]} angle={0.3} penumbra={1} intensity={2.4} color="#ffffff" />
-          <pointLight position={[-6, -2, 4]} intensity={2.0} color="#00b4d8" distance={20} />
-          <pointLight position={[0, 0, 4]} intensity={1.5} color="#ffffff" distance={14} />
-          <pointLight position={[4, 4, 6]} intensity={1.2} color="#ffffff" distance={18} />
-          <Suspense fallback={null}>
-            <Scene products={displayProducts} activeIndex={activeIndex} dimmed={menuVisible || brandVisible} />
-            <ContactShadows resolution={256} scale={22} blur={3} opacity={0.45} far={10} color="#000000" />
-          </Suspense>
-        </Canvas>
+        {webglSupported ? (
+          <Canvas
+            camera={{ position: [0, 0, 8], fov: 50 }}
+            // Optimizado para GPU integrada (i5 5ª gen / Win7):
+            // sin antialias, sin supersampling (dpr=1).
+            gl={{ alpha: true, antialias: false, powerPreference: 'high-performance' }}
+            dpr={1}
+          >
+            {/* Iluminación 100% local (sin HDRI de Environment, que además se baja
+                de internet y carga la GPU). Más luces compensan el reflejo perdido. */}
+            <ambientLight intensity={0.7} />
+            <spotLight position={[6, 12, 8]} angle={0.3} penumbra={1} intensity={2.4} color="#ffffff" />
+            <pointLight position={[-6, -2, 4]} intensity={2.0} color="#00b4d8" distance={20} />
+            <pointLight position={[0, 0, 4]} intensity={1.5} color="#ffffff" distance={14} />
+            <pointLight position={[4, 4, 6]} intensity={1.2} color="#ffffff" distance={18} />
+            <Suspense fallback={null}>
+              <Scene products={displayProducts} activeIndex={activeIndex} dimmed={menuVisible || brandVisible} />
+              <ContactShadows resolution={256} scale={22} blur={3} opacity={0.45} far={10} color="#000000" />
+            </Suspense>
+          </Canvas>
+        ) : (
+          view === 'catalog' && currentProduct && (
+            <div className={cn(
+              "absolute inset-0 flex items-center justify-center p-4 transition-all duration-500",
+              (menuVisible || brandVisible) ? "opacity-20 scale-[0.98] pointer-events-none" : "opacity-100 scale-100"
+            )}>
+              <div className="relative w-[380px] h-[520px] rounded-3xl p-6 border-2 border-cyan-400/50 bg-[#0f2032]/95 shadow-[0_0_50px_rgba(0,180,216,0.35)] flex flex-col items-center justify-between text-center">
+                <div className="relative w-full h-[330px] rounded-2xl bg-[#eef4fa] overflow-hidden flex items-center justify-center p-4 border border-white/20">
+                  {currentProduct.imageUrl ? (
+                    <img 
+                      src={currentProduct.imageUrl} 
+                      alt={currentProduct.codigo} 
+                      className="max-w-full max-h-full object-contain drop-shadow-md select-none pointer-events-none"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center gap-3 text-cyan-700">
+                      <div className="w-16 h-16 rounded-full border-4 border-cyan-500 border-dashed animate-spin flex items-center justify-center" />
+                      <span className="font-mono text-sm font-bold text-cyan-600">SIN IMAGEN</span>
+                    </div>
+                  )}
+                </div>
+                <div className="flex flex-col items-center gap-1.5 w-full">
+                  <h3 className="text-2xl font-display font-extrabold text-white">
+                    Ref. {currentProduct.codigo}
+                  </h3>
+                  <span className="text-xs font-mono font-bold text-cyan-300 tracking-wider uppercase">
+                    {currentProduct.categoria || 'Repuesto Inyección'}
+                  </span>
+                  <p className="text-sm font-sans text-slate-300 line-clamp-2 max-w-[320px] leading-relaxed font-semibold">
+                    {currentProduct.descripcion}
+                  </p>
+                </div>
+                <div className="text-[10px] font-mono text-cyan-400/80 font-bold uppercase tracking-widest mt-1">
+                  PELLIZCA PARA DETALLES
+                </div>
+              </div>
+            </div>
+          )
+        )}
       </div>
 
       {/* Header */}
