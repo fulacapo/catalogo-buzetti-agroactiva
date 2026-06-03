@@ -38,6 +38,7 @@ cp "/tmp/node-win-$NODE_WIN_VER.exe" "$ROOT/app/node/node.exe"
 echo "==> 5/5  Copiando lanzadores (.bat) e instructivo..."
 cp scripts/win/INICIAR_CATALOGO.bat "$ROOT/INICIAR_CATALOGO.bat"
 cp scripts/win/CERRAR_CATALOGO.bat  "$ROOT/CERRAR_CATALOGO.bat"
+cp scripts/win/INICIAR_COMO_CLIENTE.bat "$ROOT/INICIAR_COMO_CLIENTE.bat"
 cp scripts/win/LEEME.txt            "$ROOT/LEEME.txt"
 
 echo "==> Comprimiendo ZIP..."

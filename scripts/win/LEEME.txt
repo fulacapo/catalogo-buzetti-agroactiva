@@ -38,9 +38,19 @@ SI NO ABRE
 - Si la pantalla queda en negro, cerra todo con CERRAR_CATALOGO.bat
   y volve a iniciar.
 
+MODO CLIENTE (USAR MAC COMO SERVIDOR)
+-------------------------------------
+Si queres correr el servidor en tu Mac y usar la PC con Windows 7 como pantalla:
+1) Conecta ambos equipos a la misma red local (Wi-Fi o cable Ethernet).
+2) En tu Mac, inicia el servidor en la terminal (`npm run dev`) y obtene su IP local.
+3) En la PC con Windows, hace doble clic en  INICIAR_COMO_CLIENTE.bat
+4) Ingresa la IP de la Mac cuando te lo pida y presiona Enter.
+   - Se abrira Chrome en pantalla completa apuntando al servidor de la Mac
+     y autorizando la camara web remota.
+
 PARA QUE ARRANQUE SOLO AL PRENDER LA PC (opcional)
 --------------------------------------------------
-- Crea un acceso directo de INICIAR_CATALOGO.bat y copialo en:
+- Crea un acceso directo de INICIAR_CATALOGO.bat (o INICIAR_COMO_CLIENTE.bat) y copialo en:
   C:\Users\TU_USUARIO\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
 ============================================================
