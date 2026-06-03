@@ -138,7 +138,15 @@ app.get('/api/jobuzetti', (_req, res) => serveExplicitCatalog(res, 'db_jobuzetti
 app.get('/api/abfrenos', (_req, res) => serveExplicitCatalog(res, 'db_abfrenos.json', 'abfrenos'));
 
 // ── Estáticos del front + fallback SPA ────────────────────────────────────────
-app.use(express.static(WEB_DIR));
+app.use(express.static(WEB_DIR, {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.wasm')) {
+      res.setHeader('Content-Type', 'application/wasm');
+    } else if (filePath.endsWith('.task')) {
+      res.setHeader('Content-Type', 'application/octet-stream');
+    }
+  }
+}));
 app.get('*', (_req, res) => res.sendFile(path.join(WEB_DIR, 'index.html')));
 
 app.listen(PORT, '0.0.0.0', () => {

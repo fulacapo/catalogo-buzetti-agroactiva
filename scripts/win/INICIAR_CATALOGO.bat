@@ -24,7 +24,7 @@ if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" set "CHROME=%Loca
 
 REM --- 4) Abrir en pantalla completa con la camara ya autorizada ---
 if defined CHROME (
-  start "" "%CHROME%" --kiosk --use-fake-ui-for-media-stream --autoplay-policy=no-user-gesture-required --user-data-dir="%~dp0chrome-perfil" "http://localhost:3000"
+  start "" "%CHROME%" --kiosk --use-fake-ui-for-media-stream --autoplay-policy=no-user-gesture-required --ignore-gpu-blocklist --ignore-gpu-blacklist --enable-gpu-rasterization --enable-zero-copy --disable-gpu-sandbox --user-data-dir="%~dp0chrome-perfil" "http://localhost:3000"
 ) else (
   echo  No se encontro Google Chrome. Abriendo navegador por defecto...
   echo  IMPORTANTE: para gestos se recomienda Google Chrome.

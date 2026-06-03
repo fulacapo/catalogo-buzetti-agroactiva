@@ -5,6 +5,18 @@ export type GestureType = 'IDLE' | 'SWIPE_LEFT' | 'SWIPE_RIGHT' | 'PINCH' | 'OPE
 
 interface Point { x: number; y: number; z: number }
 
+const opts = (delegate: 'GPU' | 'CPU') => ({
+  baseOptions: {
+    modelAssetPath: '/models/hand_landmarker.task',
+    delegate: delegate,
+  },
+  runningMode: 'VIDEO' as const,
+  numHands: 1,
+  minHandDetectionConfidence: 0.6,
+  minHandPresenceConfidence: 0.6,
+  minTrackingConfidence: 0.6,
+});
+
 export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | null>, enabled = true) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [gesture, setGesture] = useState<GestureType>('IDLE');
@@ -41,20 +53,7 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
 
         if (!active) return;
 
-        const opts = (delegate: "GPU" | "CPU") => ({
-          baseOptions: { modelAssetPath: "/models/hand_landmarker.task", delegate },
-          runningMode: "VIDEO" as const,
-          numHands: 1,
-          // Higher confidence floors reject blurry / background hands (people
-          // walking past the booth) instead of latching onto them.
-          minHandDetectionConfidence: 0.6,
-          minHandPresenceConfidence: 0.6,
-          minTrackingConfidence: 0.6,
-        });
-
-        // En la GPU integrada vieja de Windows 7 el delegado GPU puede fallar o
-        // no detectar nada. Probamos GPU y, si falla, caemos a CPU automáticamente.
-        let landmarker: HandLandmarker;
+        let landmarker;
         try {
           landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
         } catch (gpuErr) {
