@@ -41,20 +41,27 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
 
         if (!active) return;
 
-        const landmarker = await HandLandmarker.createFromOptions(vision, {
-          baseOptions: {
-            modelAssetPath: "/models/hand_landmarker.task",
-            delegate: "GPU"
-          },
-          runningMode: "VIDEO",
+        const opts = (delegate: "GPU" | "CPU") => ({
+          baseOptions: { modelAssetPath: "/models/hand_landmarker.task", delegate },
+          runningMode: "VIDEO" as const,
           numHands: 1,
           // Higher confidence floors reject blurry / background hands (people
           // walking past the booth) instead of latching onto them.
           minHandDetectionConfidence: 0.6,
           minHandPresenceConfidence: 0.6,
-          minTrackingConfidence: 0.6
+          minTrackingConfidence: 0.6,
         });
-        
+
+        // En la GPU integrada vieja de Windows 7 el delegado GPU puede fallar o
+        // no detectar nada. Probamos GPU y, si falla, caemos a CPU automáticamente.
+        let landmarker: HandLandmarker;
+        try {
+          landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
+        } catch (gpuErr) {
+          console.warn("Delegado GPU falló, usando CPU:", gpuErr);
+          landmarker = await HandLandmarker.createFromOptions(vision, opts("CPU"));
+        }
+
         if (!active) return;
         landmarkerRef.current = landmarker;
         setIsInitializing(false);

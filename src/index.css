@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Tipografías locales (100% offline — sin Google Fonts).
    Son fuentes variables: un archivo por familia cubre todos los pesos. */
@@ -22,12 +24,6 @@
   font-weight: 300 700;
   font-display: swap;
   src: url('/fonts/space-grotesk.woff2') format('woff2');
-}
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --font-display: "Space Grotesk", "Inter", sans-serif;
 }
 
 body {
