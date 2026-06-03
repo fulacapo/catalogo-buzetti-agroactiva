@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Paquete portable Windows (pesado, se regenera con npm run build:win)
+dist-win/
+
+# imágenes de respaldo (no se usan)
+public/images_backup/
+
+# PDF fuente del catálogo (no necesario en el repo)
+*.pdf

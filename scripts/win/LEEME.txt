@@ -1,0 +1,46 @@
+============================================================
+  CATALOGO INTERACTIVO - AUTOPARTES JULIO O. BUZETTI S.A.
+  Version offline para Windows 7 (64 bits)
+============================================================
+
+COMO USAR
+---------
+1) Doble clic en  INICIAR_CATALOGO.bat
+   - Se abre una ventana negra (el servidor): NO la cierres.
+   - A los pocos segundos se abre Chrome en pantalla completa
+     con el catalogo y la camara ya activada.
+
+2) Para SALIR del catalogo:
+   - Presiona  Alt + F4  para cerrar Chrome.
+   - Luego doble clic en  CERRAR_CATALOGO.bat  (cierra el servidor).
+
+REQUISITOS
+----------
+- Google Chrome instalado (recomendado la ultima version que
+  soporte tu Windows 7). Sin Chrome igual abre, pero los gestos
+  andan mejor en Chrome.
+- Una webcam conectada y funcionando.
+- NO necesita internet. NO necesita instalar nada mas.
+
+CONTROLES
+---------
+- Gestos con la mano (mover, pellizcar, abrir la mano).
+- Tambien funciona con TECLADO por si la camara falla:
+    1 / 2 / 3   elegir catalogo (JOBUZETTI / Diesel / A.B. Frenos)
+    Flechas <- ->   cambiar de pieza
+    Enter           ver ficha
+    Esc             volver / cerrar ficha
+
+SI NO ABRE
+----------
+- Si Windows pregunta por el Firewall la primera vez, elegi
+  "Permitir acceso" (es solo para uso local, no sale a internet).
+- Si la pantalla queda en negro, cerra todo con CERRAR_CATALOGO.bat
+  y volve a iniciar.
+
+PARA QUE ARRANQUE SOLO AL PRENDER LA PC (opcional)
+--------------------------------------------------
+- Crea un acceso directo de INICIAR_CATALOGO.bat y copialo en:
+  C:\Users\TU_USUARIO\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+============================================================

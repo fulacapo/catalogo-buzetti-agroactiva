@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "fabricante": "A.B. FRENOS S.R.L.",
+    "descripcion": "Catálogo de frenos y sistema de aire para transporte pesado"
+  },
+  "productos": {
+    "ABF-100": {
+      "codigo": "ABF-100",
+      "descripcion": "Tanques de aire de 30 L, 40 L y 45 L",
+      "categoria": "Sistema de Aire",
+      "especificacion": "Depósito de aire comprimido para sistema de frenos neumáticos. Disponible en tres capacidades: 30, 40 y 45 litros. Cuerpo cilíndrico de chapa de acero con terminación en pintura y patas de fijación para montaje al chasis.",
+      "fabricacion": "AB FRENOS",
+      "imageUrl": "/images/abfrenos/tanque-aire.jpg",
+      "imageWidth": 1365,
+      "imageHeight": 767
+    },
+    "ABF-200": {
+      "codigo": "ABF-200",
+      "descripcion": "Pulmón de frenos",
+      "categoria": "Frenos Neumáticos",
+      "especificacion": "Actuador neumático que transforma la presión de aire en fuerza mecánica para accionar el freno. Incluye horquilla de empuje y vástago regulable para ajuste de carrera.",
+      "fabricacion": "AB FRENOS",
+      "imageUrl": "/images/abfrenos/pulmon-frenos.jpg",
+      "imageWidth": 836,
+      "imageHeight": 1254
+    },
+    "ABF-300": {
+      "codigo": "ABF-300",
+      "descripcion": "Patín de frenos símil Master o Rondón 8",
+      "categoria": "Frenos a Tambor",
+      "especificacion": "Zapata (patín) de freno a tambor en chapa estampada perforada. Aplicación símil Master o Rondón 8.",
+      "fabricacion": "AB FRENOS",
+      "imageUrl": "/images/abfrenos/patin-frenos.jpg",
+      "imageWidth": 1600,
+      "imageHeight": 1600
+    },
+    "ABF-400": {
+      "codigo": "ABF-400",
+      "descripcion": "Arandelas Punta de Eje — agujereada y lisa",
+      "categoria": "Punta de Eje",
+      "especificacion": "Arandela de retención para punta de eje, disponible en dos versiones: agujereada (con perforaciones para traba/seguro) y lisa (sin perforaciones). Para fijación del conjunto de masa y rodamientos.",
+      "fabricacion": "AB FRENOS",
+      "imageUrl": "/images/abfrenos/arandelas-punta-eje.jpg",
+      "imageWidth": 836,
+      "imageHeight": 1254
+    },
+    "ABF-500": {
+      "codigo": "ABF-500",
+      "descripcion": "Herrajes y accesorios para sistema de frenos",
+      "categoria": "Herrajes y Accesorios",
+      "especificacion": "Conjunto de herrajes, soportes, pasadores y trabas metálicas cincadas para el armado del sistema de frenos.",
+      "fabricacion": "AB FRENOS",
+      "imageUrl": "/images/abfrenos/herrajes.jpg",
+      "imageWidth": 1280,
+      "imageHeight": 1191
+    }
+  }
+}

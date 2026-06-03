@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "fabricante": "AUTOPARTES JULIO O. BUZETTI S.A.",
+    "descripcion": "Catálogo de Repuestos para Inyección Diésel",
+    "paginas_total": 73,
+    "nota": "Base de datos extraída del catálogo oficial de repuestos. Aplicaciones orientativas - confirmar siempre por número de bomba, rosca y medidas físicas."
+  },
+  "productos": {
+    "1255": {
+      "codigo": "1255",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador corto de mano para purgado de circuito",
+      "referencias": {
+        "Bosch": "2447222000",
+        "Fiat": "746189"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz L/LO 911 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352",
+        "Deutz TR A46 F2L 1114",
+        "Deutz BFL 913",
+        "Fiat Camión 619/697",
+        "John Deere TR8430"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Verificar rosca y largo físico antes de la venta",
+      "pagina_catalogo": 32
+    },
+    "1256": {
+      "codigo": "1256",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador largo para purgado de circuito",
+      "referencias": {
+        "Bosch": "2447222001"
+      },
+      "aplicaciones": [
+        "Volvo 395-495 con bomba Fiat tipo B (bomba 1063/2) - Bosch 0440001029",
+        "Hanomag R40/R45 (bomba 1063/3) - Bosch 0440001006",
+        "Fiat cuerpo de aluminio (bomba 1063/4B) - Bosch 0440004043",
+        "Fiat cuerpo de hierro (bomba 1063/4BH) - Bosch 0440004043"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Verificar largo y rosca. NO intercambiable con 1256 R ni 1256/5",
+      "pagina_catalogo": 32
+    },
+    "1901": {
+      "codigo": "1901",
+      "categoria": "Filtros de Gasoil",
+      "descripcion": "Filtro de gasoil",
+      "referencias": {},
+      "aplicaciones": [],
+      "medidas": "",
+      "pagina_catalogo": 19
+    },
+    "1902": {
+      "codigo": "1902",
+      "categoria": "Filtros de Gasoil",
+      "descripcion": "Filtro de gasoil blindado",
+      "referencias": {},
+      "aplicaciones": [],
+      "medidas": "",
+      "pagina_catalogo": 19
+    },
+    "1063H": {
+      "codigo": "1063H",
+      "categoria": "Bombas de Alimentación a Émbolo",
+      "descripcion": "Bomba de alimentación a émbolo Mercedes-Benz/Deutz con filtro, cuerpo de hierro",
+      "referencias": {
+        "Bosch": "0440003176"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz con filtro, cuerpo de hierro",
+        "Mercedes-Benz L/LO 911 (Motor OM 352)",
+        "Mercedes-Benz L/LO 1112 (Motor OM 352)",
+        "Mercedes-Benz L/LO 1114 (Motor OM 352)",
+        "Mercedes-Benz L 1517 (Motor OM 352A)",
+        "Deutz TR A46/U F2L 1114",
+        "Deutz TR A65 F3L 2114"
+      ],
+      "componentes_principales": {
+        "Cuerpo": "Hierro de alta resistencia",
+        "Émbolo": "21,984 mm",
+        "Prefiltro": "Vaso metálico integrado",
+        "Cebador": "Cebador corto mod. 1255"
+      },
+      "pagina_catalogo": 9
+    },
+    "1063/1H": {
+      "codigo": "1063/1H",
+      "categoria": "Bombas de Alimentación a Émbolo",
+      "descripcion": "Bomba alimentación Mercedes-Benz 170-RD sin filtro, cuerpo de hierro",
+      "referencias": {
+        "Bosch": "0440003190"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz 170-RD sin filtro",
+        "Motores Mercedes-Benz estacionarios y marinos antiguos",
+        "Sistemas con prefiltro de combustible externo"
+      ],
+      "componentes_principales": {
+        "Cuerpo": "Hierro fundido",
+        "Filtro": "Sin vaso decantador de combustible",
+        "Cebador": "Cebador de mano de rosca"
+      },
+      "pagina_catalogo": 10
+    },
+    "1063/4BH": {
+      "codigo": "1063/4BH",
+      "categoria": "Bombas de Alimentación a Émbolo",
+      "descripcion": "Bomba alimentación Fiat-Deutz cuerpo de hierro",
+      "referencias": {
+        "Bosch": "0440004055"
+      },
+      "aplicaciones": [
+        "Fiat-Deutz cuerpo de hierro",
+        "Deutz TR A85 (Motor F4L1114)",
+        "Deutz TR A85 (Motor F4L2114)",
+        "Deutz TR A130 (Motor F6L1114)",
+        "Deutz BF6L913",
+        "Inarmo Cimarrón"
+      ],
+      "componentes_principales": {
+        "Cuerpo": "Hierro nodular",
+        "Cebador": "Cebador largo mod. 1256",
+        "Compatibilidad": "Motores diésel pesados agrícolas"
+      },
+      "pagina_catalogo": 13
+    },
+    "1255 AL 4": {
+      "codigo": "1255 AL 4",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador corto de aluminio para purgado de circuito",
+      "referencias": {
+        "Bosch": "2447222000",
+        "Fiat": "746189"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz L/LO 911 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352",
+        "Deutz TR A46 F2L 1114",
+        "Deutz BFL 913",
+        "Fiat Camión 619/697-221A",
+        "John Deere TR8430",
+        "Volvo 395-495"
+      ],
+      "medidas": "Rosca M14 x 1.5",
+      "nota": "Cuerpo mecanizado en aluminio de alta resistencia. Verificar rosca y largo físico antes de la venta",
+      "pagina_catalogo": 32
+    },
+    "1255B": {
+      "codigo": "1255B",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador corto de bronce para purgado de circuito",
+      "referencias": {
+        "Bosch": "2447222000",
+        "Fiat": "746189"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz L/LO 911 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352",
+        "Deutz TR A46 F2L 1114",
+        "Deutz BFL 913",
+        "Fiat Camión 619/697-221A",
+        "John Deere TR8430",
+        "Saab Scania L111",
+        "Volvo 395-495"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Cuerpo de bronce de alta durabilidad y resistencia a la corrosión química del combustible diésel",
+      "pagina_catalogo": 32
+    },
+    "1255RB": {
+      "codigo": "1255RB",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador corto con resorte de bronce",
+      "referencias": {},
+      "aplicaciones": [
+        "Mercedes-Benz L/LO 911 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352",
+        "Deutz TR A46 F2L 1114",
+        "Deutz BFL 913",
+        "Fiat Camión 619/697-221A",
+        "John Deere TR8430"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Variante del modelo 1255 equipado con resorte de recuperación interno y cuerpo de bronce",
+      "pagina_catalogo": 32
+    },
+    "1256B": {
+      "codigo": "1256B",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador largo de bronce",
+      "referencias": {
+        "Bosch": "2447222001"
+      },
+      "aplicaciones": [
+        "Volvo 395-495 con bomba Fiat tipo B (bomba 1063/2) - Bosch 0440001029",
+        "Hanomag R40/R45 (bomba 1063/3) - Bosch 0440001006",
+        "Fiat cuerpo de aluminio (bomba 1063/4B) - Bosch 0440004043",
+        "Fiat cuerpo de hierro (bomba 1063/4BH) - Bosch 0440004043"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Cuerpo de bronce de alta durabilidad. Especialmente indicado para maquinaria vial y tractores pesados",
+      "pagina_catalogo": 32
+    },
+    "1256/5": {
+      "codigo": "1256/5",
+      "categoria": "Cebadores para Bombas de Alimentación",
+      "descripcion": "Cebador con capuchón de goma (Nuevo tipo)",
+      "referencias": {
+        "Bosch": "2447222126"
+      },
+      "aplicaciones": [
+        "Motores diésel de servicio pesado (Mercedes-Benz, John Deere, Cummins)",
+        "Sistemas con cebador manual roscado universal M16 x 1.5"
+      ],
+      "medidas": "Rosca M16 x 1.5",
+      "nota": "Pieza física distinta al 1256 y 1256 R con capuchón protector tipo fuelle de goma. Verificar largo, cuerpo y rosca antes de la venta",
+      "pagina_catalogo": 32
+    },
+    "1822/3": {
+      "codigo": "1822/3",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Mercedes-Benz 1114",
+      "referencias": {
+        "Bosch": "1417413000"
+      },
+      "aplicaciones": [
+        "Mercedes-Benz 1114"
+      ],
+      "medidas": "R. 14 x 1,5 mm",
+      "pagina_catalogo": "final"
+    },
+    "1822/6": {
+      "codigo": "1822/6",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion tipo banjo (perno hueco con bocha)",
+      "referencias": {},
+      "aplicaciones": [],
+      "medidas": "",
+      "pagina_catalogo": "final"
+    },
+    "1822/8": {
+      "codigo": "1822/8",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Scania Vabis modelo nuevo",
+      "referencias": {},
+      "aplicaciones": [
+        "Scania Vabis modelo nuevo"
+      ],
+      "medidas": "",
+      "pagina_catalogo": "final"
+    },
+    "1826/1": {
+      "codigo": "1826/1",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula antirretorno aerea",
+      "referencias": {},
+      "aplicaciones": [],
+      "medidas": "",
+      "pagina_catalogo": "final"
+    }
+  }
+}

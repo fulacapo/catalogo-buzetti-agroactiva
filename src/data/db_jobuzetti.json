@@ -1,0 +1,1676 @@
+{
+  "metadata": {
+    "fabricante": "AUTOPARTES JULIO O. BUZETTI S.A.",
+    "marca": "JOBUZETTI",
+    "descripcion": "Catálogo de Bisagras, Cierres y Accesorios de Carrocería",
+    "total_productos": 185,
+    "nota": "Fabricación propia JOBUZETTI + líneas importadas complementarias"
+  },
+  "productos": {
+    "796D": {
+      "codigo": "796D",
+      "descripcion": "Ford pick up 61/66 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "797I": {
+      "codigo": "797I",
+      "descripcion": "Ford pick up 61/66 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "798D": {
+      "codigo": "798D",
+      "descripcion": "Ford pick up 67/73 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/798D.png"
+    },
+    "796I": {
+      "codigo": "796I",
+      "descripcion": "Ford pick up 67/73 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/796I.png"
+    },
+    "800D": {
+      "codigo": "800D",
+      "descripcion": "Ford pick up 74/81 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/800D.png"
+    },
+    "801I": {
+      "codigo": "801I",
+      "descripcion": "Ford pick up 74/81 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/801I.png"
+    },
+    "802D": {
+      "codigo": "802D",
+      "descripcion": "Ford pick up 82/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "803I": {
+      "codigo": "803I",
+      "descripcion": "Ford pick up 82/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "804D": {
+      "codigo": "804D",
+      "descripcion": "Ford camión 67/73 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/804D.png"
+    },
+    "804I": {
+      "codigo": "804I",
+      "descripcion": "Ford camión 67/73 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/804I.png"
+    },
+    "806D": {
+      "codigo": "806D",
+      "descripcion": "Ford pick up soporte 82/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/806D.png"
+    },
+    "807I": {
+      "codigo": "807I",
+      "descripcion": "Ford pick up soporte 82/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/807I.png"
+    },
+    "808D": {
+      "codigo": "808D",
+      "descripcion": "Ford ecosport/fiesta 07/12 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/808D.png"
+    },
+    "809I": {
+      "codigo": "809I",
+      "descripcion": "Ford ecosport/fiesta 07/12 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/809I.png"
+    },
+    "850D": {
+      "codigo": "850D",
+      "descripcion": "Ford escort 88/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/850D.png"
+    },
+    "851I": {
+      "codigo": "851I",
+      "descripcion": "Ford escort 88/89 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/851I.png"
+    },
+    "890D": {
+      "codigo": "890D",
+      "descripcion": "Ford focus 09/13 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/890D.png"
+    },
+    "891I": {
+      "codigo": "891I",
+      "descripcion": "Ford focus 09/13 izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/891I.png"
+    },
+    "FD600": {
+      "codigo": "FD600",
+      "descripcion": "Ford pick up pick up Ranger delantero 2009/+",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FD600.png"
+    },
+    "1458": {
+      "codigo": "1458",
+      "descripcion": "Ford pick up pick up Ranger delantero 2009/+",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1458.png"
+    },
+    "950-D": {
+      "codigo": "950-D",
+      "descripcion": "BISAGRA CAPOT KA 97/13",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/950-D.png"
+    },
+    "952-D": {
+      "codigo": "952-D",
+      "descripcion": "BISAGRA CAPOT KA 97/13",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/952-D.png"
+    },
+    "06-07": {
+      "codigo": "06-07",
+      "descripcion": "BISAGRA capot FORD FOCUS",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "894D": {
+      "codigo": "894D",
+      "descripcion": "BISAGRA capot FORD FOCUS",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/894D.png"
+    },
+    "1001": {
+      "codigo": "1001",
+      "descripcion": "Ford pick up camión 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1001.png"
+    },
+    "1002": {
+      "codigo": "1002",
+      "descripcion": "Ford pick up camión 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1003": {
+      "codigo": "1003",
+      "descripcion": "Ford pick up 85/96",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1003.png"
+    },
+    "1004": {
+      "codigo": "1004",
+      "descripcion": "Ford pick up 85/96",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1004.png"
+    },
+    "1005": {
+      "codigo": "1005",
+      "descripcion": "Ford ecospert/fiesta 07/12",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1005.png"
+    },
+    "1006": {
+      "codigo": "1006",
+      "descripcion": "Ford ecospert/fiesta 07/12",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1006.png"
+    },
+    "1007": {
+      "codigo": "1007",
+      "descripcion": "Ford pick up F100/F4000 95/99",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1007.png"
+    },
+    "1009": {
+      "codigo": "1009",
+      "descripcion": "Ford pick up F100/F4000 95/99",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1009.png"
+    },
+    "1050D": {
+      "codigo": "1050D",
+      "descripcion": "izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1050D.png"
+    },
+    "1051I": {
+      "codigo": "1051I",
+      "descripcion": "izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1051I.png"
+    },
+    "1052D": {
+      "codigo": "1052D",
+      "descripcion": "izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1052D.png"
+    },
+    "1053I": {
+      "codigo": "1053I",
+      "descripcion": "izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1053I.png"
+    },
+    "1054": {
+      "codigo": "1054",
+      "descripcion": "central portón 02/06",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1054.png"
+    },
+    "1056D": {
+      "codigo": "1056D",
+      "descripcion": "derecha",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado|",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1056D.png"
+    },
+    "1057I": {
+      "codigo": "1057I",
+      "descripcion": "izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1057I.png"
+    },
+    "1065": {
+      "codigo": "1065",
+      "descripcion": "de acero| Terminación cromatizado",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1065.png"
+    },
+    "1059": {
+      "codigo": "1059",
+      "descripcion": "de acero| Terminación cromatizado",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1059.png"
+    },
+    "97-12": {
+      "codigo": "97-12",
+      "descripcion": "Reten compuerta Ford RANGER",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "700": {
+      "codigo": "700",
+      "descripcion": "Reten compuerta Ford RANGER",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/700.png"
+    },
+    "1100": {
+      "codigo": "1100",
+      "descripcion": "derecha/izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1100.png"
+    },
+    "1102": {
+      "codigo": "1102",
+      "descripcion": "/izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1102.png"
+    },
+    "1101": {
+      "codigo": "1101",
+      "descripcion": "derecha/izquierda",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1101.png"
+    },
+    "100": {
+      "codigo": "100",
+      "descripcion": "Ford pick up F100 67/73",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "101": {
+      "codigo": "101",
+      "descripcion": "Ford pick up F100 67/73",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "102": {
+      "codigo": "102",
+      "descripcion": "Ford pick up F100 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/102.png"
+    },
+    "103": {
+      "codigo": "103",
+      "descripcion": "Ford pick up F100 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/103.png"
+    },
+    "104": {
+      "codigo": "104",
+      "descripcion": "Ford Espiral 82/89",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Fleje sae 1050| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/104.png"
+    },
+    "1060": {
+      "codigo": "1060",
+      "descripcion": "Ford pick up F100 67/73",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida hierro trefilado 1010| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1060.png"
+    },
+    "1061": {
+      "codigo": "1061",
+      "descripcion": "Ford pick up F100 67/73",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida hierro trefilado 1010| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1061.png"
+    },
+    "1062": {
+      "codigo": "1062",
+      "descripcion": "Ford pick up F100 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida hierro trefilado 1010| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1062.png"
+    },
+    "1063": {
+      "codigo": "1063",
+      "descripcion": "Ford pick up F100 74/81",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "Construida hierro trefilado 1010| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1063.png"
+    },
+    "1451": {
+      "codigo": "1451",
+      "descripcion": "Ford fiesta - delantero 2009/+",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1451.png"
+    },
+    "9007": {
+      "codigo": "9007",
+      "descripcion": "Ford Cargo delantero 2013/+",
+      "linea": "FORD",
+      "categoria": "Línea Ford",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/9007.png"
+    },
+    "1039": {
+      "codigo": "1039",
+      "descripcion": "CIERRE DE CAPOT CHEV. CRUZE 12/16",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1039.png"
+    },
+    "702-D": {
+      "codigo": "702-D",
+      "descripcion": "s10 2012 +",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/702-D.png"
+    },
+    "810D": {
+      "codigo": "810D",
+      "descripcion": "Chev. pick up 60/66 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/810D.png"
+    },
+    "811I": {
+      "codigo": "811I",
+      "descripcion": "Chev. pick up 60/66 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/811I.png"
+    },
+    "812D": {
+      "codigo": "812D",
+      "descripcion": "Chev. pick up 67/73 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/812D.png"
+    },
+    "813I": {
+      "codigo": "813I",
+      "descripcion": "Chev. pick up 67/73 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/813I.png"
+    },
+    "814D": {
+      "codigo": "814D",
+      "descripcion": "Chev. camión 67/73 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/814D.png"
+    },
+    "815I": {
+      "codigo": "815I",
+      "descripcion": "Chev. camión 67/73 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/815I.png"
+    },
+    "816D": {
+      "codigo": "816D",
+      "descripcion": "Chev. Bedford todos izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/816D.png"
+    },
+    "817I": {
+      "codigo": "817I",
+      "descripcion": "Chev. Bedford todos izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/817I.png"
+    },
+    "818D": {
+      "codigo": "818D",
+      "descripcion": "Chev. pick up 74/81 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/818D.png"
+    },
+    "819I": {
+      "codigo": "819I",
+      "descripcion": "Chev. pick up 74/81 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/819I.png"
+    },
+    "824D": {
+      "codigo": "824D",
+      "descripcion": "Chev. corsa classic todos izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/824D.png"
+    },
+    "825I": {
+      "codigo": "825I",
+      "descripcion": "Chev. corsa classic todos izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/825I.png"
+    },
+    "892D": {
+      "codigo": "892D",
+      "descripcion": "Chev. silverado 97/02 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF |Resortes acero templado |Pernos de acero| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/892D.png"
+    },
+    "893I": {
+      "codigo": "893I",
+      "descripcion": "Chev. silverado 97/02 izquierda",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF |Resortes acero templado |Pernos de acero| Terminación pintura epoxy",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/893I.png"
+    },
+    "1206D": {
+      "codigo": "1206D",
+      "descripcion": "BISAGRA DE CAPOT CHEV.ONIX 13/19-",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1207I": {
+      "codigo": "1207I",
+      "descripcion": "BISAGRA DE CAPOT CHEV.ONIX 13/19-",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1203I": {
+      "codigo": "1203I",
+      "descripcion": "BISAGRA DE CAPOT CHEV.CRUZE 17/...",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1203I.png"
+    },
+    "1202D": {
+      "codigo": "1202D",
+      "descripcion": "BISAGRA DE CAPOT CHEV.CRUZE 17/...",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1202D.png"
+    },
+    "1200D": {
+      "codigo": "1200D",
+      "descripcion": "BISAGRA DE CAPOT CHEV.AVEO 11/14-",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1200D.png"
+    },
+    "1204D": {
+      "codigo": "1204D",
+      "descripcion": "BISAGRA DE CAPOT CHEV.AVEO 11/14-",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1204D.png"
+    },
+    "1205I": {
+      "codigo": "1205I",
+      "descripcion": "",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1205I.png"
+    },
+    "106": {
+      "codigo": "106",
+      "descripcion": "Resorte de bisagra Chev. pick up 74/81",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/106.png"
+    },
+    "107": {
+      "codigo": "107",
+      "descripcion": "Resorte de bisagra Chev. pick up 74/81",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/107.png"
+    },
+    "1103": {
+      "codigo": "1103",
+      "descripcion": "juego de cables Chev. pick up S10 00/05",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con alambre de 5mm| Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1103.png"
+    },
+    "1104": {
+      "codigo": "1104",
+      "descripcion": "juego de cables Chev. pick up S10 00/05",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con alambre de 5mm| Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1104.png"
+    },
+    "1105": {
+      "codigo": "1105",
+      "descripcion": "juego de cables Chev. pick up S10 06/+",
+      "linea": "CHEVROLET",
+      "categoria": "Línea Chevrolet",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1105.png"
+    },
+    "820D": {
+      "codigo": "820D",
+      "descripcion": "Dodge Fargo todos izquierda",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/820D.png"
+    },
+    "821I": {
+      "codigo": "821I",
+      "descripcion": "Dodge Fargo todos izquierda",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/821I.png"
+    },
+    "822D": {
+      "codigo": "822D",
+      "descripcion": "Dodge camión D600 izquierda",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/822D.png"
+    },
+    "823I": {
+      "codigo": "823I",
+      "descripcion": "Dodge camión D600 izquierda",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/823I.png"
+    },
+    "1011": {
+      "codigo": "1011",
+      "descripcion": "Dodge 67/68",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1011.png"
+    },
+    "1012": {
+      "codigo": "1012",
+      "descripcion": "Dodge 67/68",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1012.png"
+    },
+    "1013": {
+      "codigo": "1013",
+      "descripcion": "Dodge 69/72",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1013.png"
+    },
+    "105": {
+      "codigo": "105",
+      "descripcion": "Dodge Fargo y camión D600",
+      "linea": "DODGE",
+      "categoria": "Línea Dodge",
+      "especificacion": "Construida alambre de 5mm| Resorte acero templado| Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/105.png"
+    },
+    "832D": {
+      "codigo": "832D",
+      "descripcion": "M. Benz camión 710/1526 izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/832D.png"
+    },
+    "833I": {
+      "codigo": "833I",
+      "descripcion": "M. Benz camión 710/1526 izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/833I.png"
+    },
+    "BZ400": {
+      "codigo": "BZ400",
+      "descripcion": "M. Benz Sprinter 97/05 derecha",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "BZ401": {
+      "codigo": "BZ401",
+      "descripcion": "M. Benz Sprinter 97/05 derecha",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "BZ404": {
+      "codigo": "BZ404",
+      "descripcion": "M. Benz Sprinter 2012/+ izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/BZ404.png"
+    },
+    "BZ405": {
+      "codigo": "BZ405",
+      "descripcion": "M. Benz Sprinter 2012/+ izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/BZ405.png"
+    },
+    "1504D": {
+      "codigo": "1504D",
+      "descripcion": "71/91 derecha",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado|",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1504D.png"
+    },
+    "1505I": {
+      "codigo": "1505I",
+      "descripcion": "71/91 izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1505I.png"
+    },
+    "BZ402": {
+      "codigo": "BZ402",
+      "descripcion": "2012/+",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/BZ402.png"
+    },
+    "BZ399": {
+      "codigo": "BZ399",
+      "descripcion": "Rienda Sprinter 97/12 portón trasero",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "BZ403": {
+      "codigo": "BZ403",
+      "descripcion": "derecha/izquierda",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "FI500": {
+      "codigo": "FI500",
+      "descripcion": "",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FI500.png"
+    },
+    "9008": {
+      "codigo": "9008",
+      "descripcion": "Atego, Actros",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/9008.png"
+    },
+    "9009": {
+      "codigo": "9009",
+      "descripcion": "Atego, Actros",
+      "linea": "MERCEDES BENZ",
+      "categoria": "Línea Mercedes Benz",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/9009.png"
+    },
+    "858D": {
+      "codigo": "858D",
+      "descripcion": "Fiat duna /uno 90/99 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "Construida con chapa 1010 LF | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/858D.png"
+    },
+    "859I": {
+      "codigo": "859I",
+      "descripcion": "Fiat duna /uno 90/99 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "Construida con chapa 1010 LF | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/859I.png"
+    },
+    "864D": {
+      "codigo": "864D",
+      "descripcion": "Fiat Siena/Palio 96/05 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/864D.png"
+    },
+    "865I": {
+      "codigo": "865I",
+      "descripcion": "Fiat Siena/Palio 96/05 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/865I.png"
+    },
+    "FI506D": {
+      "codigo": "FI506D",
+      "descripcion": "Fiat Ducato 95/18 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FI506D.png"
+    },
+    "FI507I": {
+      "codigo": "FI507I",
+      "descripcion": "Fiat Ducato 95/18 izquierda",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FI507I.png"
+    },
+    "FI502": {
+      "codigo": "FI502",
+      "descripcion": "Retén Porton Fiat Ducato Lateral",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FI502.png"
+    },
+    "FI503": {
+      "codigo": "FI503",
+      "descripcion": "Retén Porton Fiat Ducato Lateral",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/FI503.png"
+    },
+    "FI504": {
+      "codigo": "FI504",
+      "descripcion": "superior 98/16",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "FI505": {
+      "codigo": "FI505",
+      "descripcion": "lateral central 06/15",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/FI505.png"
+    },
+    "FI508": {
+      "codigo": "FI508",
+      "descripcion": "Rienda Puerta Fiat Ducato 96/13",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/FI508.png"
+    },
+    "1603-17": {
+      "codigo": "1603-17",
+      "descripcion": "Del. 2008/+ DOBLO III Del. 2010/+",
+      "linea": "FIAT",
+      "categoria": "Línea Fiat",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1603-17.png"
+    },
+    "860D-I": {
+      "codigo": "860D-I",
+      "descripcion": "VW Gol AB9 derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/860D-I.png"
+    },
+    "868D": {
+      "codigo": "868D",
+      "descripcion": "VW Gol AB9 derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Terminación natural",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/868D.png"
+    },
+    "869I": {
+      "codigo": "869I",
+      "descripcion": "VW Polo/Golf/Caddy 96/07 derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/869I.png"
+    },
+    "872D": {
+      "codigo": "872D",
+      "descripcion": "VW Polo/Golf/Caddy 96/07 derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/872D.png"
+    },
+    "873I": {
+      "codigo": "873I",
+      "descripcion": "VW Gol S. III/IV derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/873I.png"
+    },
+    "874D": {
+      "codigo": "874D",
+      "descripcion": "VW Gol S. III/IV derecha",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/874D.png"
+    },
+    "875I": {
+      "codigo": "875I",
+      "descripcion": "VW Gol S. III/IV izquierda",
+      "linea": "VOLKSWAGEN",
+      "categoria": "Línea Volkswagen",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/875I.png"
+    },
+    "862D": {
+      "codigo": "862D",
+      "descripcion": "Peugeot 405 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/862D.png"
+    },
+    "863I": {
+      "codigo": "863I",
+      "descripcion": "Peugeot 405 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/863I.png"
+    },
+    "870D": {
+      "codigo": "870D",
+      "descripcion": "Peugeot 504 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/870D.png"
+    },
+    "871I": {
+      "codigo": "871I",
+      "descripcion": "Peugeot 504 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "876D": {
+      "codigo": "876D",
+      "descripcion": "Peugeot 206/207 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/876D.png"
+    },
+    "877I": {
+      "codigo": "877I",
+      "descripcion": "Peugeot 206/207 izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/877I.png"
+    },
+    "888D": {
+      "codigo": "888D",
+      "descripcion": "Peugeot Partner izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/888D.png"
+    },
+    "889I": {
+      "codigo": "889I",
+      "descripcion": "Peugeot Partner izquierda",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/889I.png"
+    },
+    "1020": {
+      "codigo": "1020",
+      "descripcion": "Peugeot 207",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1020.png"
+    },
+    "1021": {
+      "codigo": "1021",
+      "descripcion": "Peugeot 207",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1021.png"
+    },
+    "1024": {
+      "codigo": "1024",
+      "descripcion": "Peugeot Partner clic orig.",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1024.png"
+    },
+    "1025": {
+      "codigo": "1025",
+      "descripcion": "Peugeot Partner clic orig.",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1025.png"
+    },
+    "1026": {
+      "codigo": "1026",
+      "descripcion": "Peugeot 307 06/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1026.png"
+    },
+    "1027": {
+      "codigo": "1027",
+      "descripcion": "Peugeot 307 06/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1027.png"
+    },
+    "1028": {
+      "codigo": "1028",
+      "descripcion": "Peugeot 308",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1036": {
+      "codigo": "1036",
+      "descripcion": "Peugeot 308",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1036.png"
+    },
+    "1037": {
+      "codigo": "1037",
+      "descripcion": "Peugeot Partner 2010/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1038": {
+      "codigo": "1038",
+      "descripcion": "Peugeot Partner 2010/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1902": {
+      "codigo": "1902",
+      "descripcion": "Peugeot 308 II delantera 2014/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "1949": {
+      "codigo": "1949",
+      "descripcion": "Peugeot 308 II delantera 2014/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "1958": {
+      "codigo": "1958",
+      "descripcion": "Peugeot 208/2008 delantera 2012/+",
+      "linea": "PEUGEOT",
+      "categoria": "Línea Peugeot",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "1022": {
+      "codigo": "1022",
+      "descripcion": "Citroën C4",
+      "linea": "CITROËN",
+      "categoria": "Línea Citroën",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1022.png"
+    },
+    "1023": {
+      "codigo": "1023",
+      "descripcion": "Citroën C4",
+      "linea": "CITROËN",
+      "categoria": "Línea Citroën",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1023.png"
+    },
+    "1912": {
+      "codigo": "1912",
+      "descripcion": "Citroén C3 delantera 2012/+",
+      "linea": "CITROËN",
+      "categoria": "Línea Citroën",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "900D": {
+      "codigo": "900D",
+      "descripcion": "Toyota Hilux 06/+ izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/900D.png"
+    },
+    "901I": {
+      "codigo": "901I",
+      "descripcion": "Toyota Hilux 06/+ izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/901I.png"
+    },
+    "902D": {
+      "codigo": "902D",
+      "descripcion": "Toyota Hilux 98/06 izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/902D.png"
+    },
+    "903I": {
+      "codigo": "903I",
+      "descripcion": "Toyota Hilux 98/06 izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/903I.png"
+    },
+    "904D": {
+      "codigo": "904D",
+      "descripcion": "Toyota Corolla 00/06 izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/904D.png"
+    },
+    "905I": {
+      "codigo": "905I",
+      "descripcion": "Toyota Corolla 00/06 izquierda",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/905I.png"
+    },
+    "1107": {
+      "codigo": "1107",
+      "descripcion": "Hilux 06/+",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1107.png"
+    },
+    "2016-2020": {
+      "codigo": "2016-2020",
+      "descripcion": "Tensor de puerta Hilux delantero",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "3221": {
+      "codigo": "3221",
+      "descripcion": "Tensor de puerta Hilux delantero",
+      "linea": "TOYOTA",
+      "categoria": "Línea Toyota",
+      "especificacion": "Construida con alambre de 5mm |Forjado en plástico negro | Planchuela de acero templado| Terminación cincado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/3221.png"
+    },
+    "852D": {
+      "codigo": "852D",
+      "descripcion": "Renault 12 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/852D.png"
+    },
+    "853I": {
+      "codigo": "853I",
+      "descripcion": "Renault 12 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/853I.png"
+    },
+    "854D": {
+      "codigo": "854D",
+      "descripcion": "Renault 9/11 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/854D.png"
+    },
+    "855I": {
+      "codigo": "855I",
+      "descripcion": "Renault 9/11 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/855I.png"
+    },
+    "856D": {
+      "codigo": "856D",
+      "descripcion": "Renault 19 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/856D.png"
+    },
+    "857I": {
+      "codigo": "857I",
+      "descripcion": "Renault 19 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/857I.png"
+    },
+    "866D": {
+      "codigo": "866D",
+      "descripcion": "Renault 18 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/866D.png"
+    },
+    "867I": {
+      "codigo": "867I",
+      "descripcion": "Renault 18 izquierda",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/867I.png"
+    },
+    "07-13": {
+      "codigo": "07-13",
+      "descripcion": "BISAGRA CAPOT SANDERO STEPWAY",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "898-D": {
+      "codigo": "898-D",
+      "descripcion": "BISAGRA CAPOT DUSTER 11 / 18",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO BISAGRA CAPOT KWID 18 >",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "956-D": {
+      "codigo": "956-D",
+      "descripcion": "BISAGRA CAPOT DUSTER 11 / 18",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO BISAGRA CAPOT KWID 18 >",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/956-D.png"
+    },
+    "896-D": {
+      "codigo": "896-D",
+      "descripcion": "BISAGRA CAPOT KWID 18 >",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/896-D.png"
+    },
+    "1016": {
+      "codigo": "1016",
+      "descripcion": "Renault 9/11",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1016.png"
+    },
+    "1018": {
+      "codigo": "1018",
+      "descripcion": "Renault 9/11",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación cromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1018.png"
+    },
+    "1019": {
+      "codigo": "1019",
+      "descripcion": "Renault Kangoo",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1019.png"
+    },
+    "1033": {
+      "codigo": "1033",
+      "descripcion": "Renault Kangoo",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1033.png"
+    },
+    "1034": {
+      "codigo": "1034",
+      "descripcion": "Renault Express",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "Construida con chapa 1010 LF | Pernos de acero| Resorte acero templado| Terminación bicromatizado",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": "/images/jobuzetti/1034.png"
+    },
+    "1752": {
+      "codigo": "1752",
+      "descripcion": "Kangoo 2007/+",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1752.png"
+    },
+    "1770": {
+      "codigo": "1770",
+      "descripcion": "Kangoo 2007/+",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1770.png"
+    },
+    "1759": {
+      "codigo": "1759",
+      "descripcion": "Clio/Symbol",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1759.png"
+    },
+    "1757": {
+      "codigo": "1757",
+      "descripcion": "Clio/Symbol",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1757.png"
+    },
+    "08-14": {
+      "codigo": "08-14",
+      "descripcion": "Retén de puerta Clio II-Megane III",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "",
+      "fabricacion": "JOBUZETTI",
+      "imageUrl": null
+    },
+    "1767": {
+      "codigo": "1767",
+      "descripcion": "TRAS LAT RENAULT DUSTER OROCH",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADOS",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/1767.png"
+    },
+    "704": {
+      "codigo": "704",
+      "descripcion": "TRAS LAT RENAULT DUSTER OROCH",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADOS",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": null
+    },
+    "2001": {
+      "codigo": "2001",
+      "descripcion": "TENSOR DE PUERTA ALASKAN",
+      "linea": "RENAULT",
+      "categoria": "Línea Renault",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/2001.png"
+    },
+    "958-D": {
+      "codigo": "958-D",
+      "descripcion": "BISAGRA CAPOT HONDA FIT 15 >",
+      "linea": "HONDA",
+      "categoria": "Línea Honda",
+      "especificacion": "IMPORTADO",
+      "fabricacion": "IMPORTADO",
+      "imageUrl": "/images/jobuzetti/958-D.png"
+    }
+  }
+}

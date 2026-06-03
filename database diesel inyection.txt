@@ -1,0 +1,2311 @@
+﻿{
+  "metadata": {
+    "fabricante": "DUSP S.R.L.",
+    "descripcion": "Fabrica de Repuestos para Inyeccion Diesel",
+    "paginas_total": 73,
+    "nota": "Base de datos extraida del catalogo fisico DUSP. Aplicaciones orientativas - confirmar siempre por numero de bomba, muestra fisica, rosca y medidas."
+  },
+
+
+  "productos": {
+
+
+    "1255": {
+      "codigo": "1255",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "categoria_en": "Feeding Pump Primers",
+      "descripcion": "Cebador corto",
+      "referencias": { "Bosch": "2447222000", "Fiat": "746189" },
+      "aplicaciones": [
+        "Mercedes-Benz L/LO 911 OM 352", "Mercedes-Benz L/LO 1112 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352", "Mercedes-Benz L 1517 OM 352A",
+        "Mercedes-Benz O 170 OM 352A", "Mercedes-Benz Marino OM 352A",
+        "Mercedes-Benz Estacionario OM 352A",
+        "Deutz TR A46 F2L 1114", "Deutz TR A6 F3L 1114", "Deutz TR A65 F3L 2114",
+        "Deutz Camion 200D16 FL", "Deutz Omnibus 200 RS12-FBL413",
+        "Deutz TR A85 F4L 1114/2114", "Deutz TR A13 F6L 1114", "Deutz BFL 913",
+        "Deutz Inarmo Cimarron",
+        "Fiat Estanciero 821D", "Fiat Camion 619/697-221A",
+        "Fiat con bomba tipo B", "Fiat cuerpo aluminio/hierro",
+        "Fiat-Deutz cuerpo aluminio/hierro",
+        "John Deere TR8430", "Saab Scania L111",
+        "Saab Scania LS111/BR116/DS11", "Volvo 395-495",
+        "Hanomag R40/R45"
+      ],
+      "nota": "Verificar rosca y largo antes de vender",
+      "pagina_catalogo": 32
+    },
+
+
+    "1255 R": {
+      "codigo": "1255 R",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador corto con resorte",
+      "referencias": {},
+      "aplicaciones": [],
+      "nota": "Variante con resorte del 1255",
+      "pagina_catalogo": 32
+    },
+
+
+    "1255 P": {
+      "codigo": "1255 P",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador corto de plastico",
+      "referencias": { "Bosch": "2447222020" },
+      "aplicaciones": [],
+      "nota": "Cuerpo de plastico",
+      "pagina_catalogo": 32
+    },
+
+
+    "1256": {
+      "codigo": "1256",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador largo",
+      "referencias": { "Bosch": "2447222001" },
+      "aplicaciones": [
+        "Volvo 395-495 con bomba Fiat tipo B (bomba 1063/2) - Bosch 0440001029",
+        "Hanomag R40/R45 (bomba 1063/3) - Bosch 0440001006",
+        "Fiat cuerpo de aluminio (bomba 1063/4B) - Bosch 0440004043",
+        "Fiat cuerpo de hierro (bomba 1063/4BH) - Bosch 0440004043"
+      ],
+      "nota": "Verificar largo y rosca. NO intercambiable con 1256 R ni 1256/5",
+      "pagina_catalogo": 32
+    },
+
+
+    "1256 R": {
+      "codigo": "1256 R",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador largo con resorte",
+      "referencias": {},
+      "aplicaciones": [],
+      "nota": "Variante con resorte del 1256",
+      "pagina_catalogo": 32
+    },
+
+
+    "1256/1": {
+      "codigo": "1256/1",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador inclinado",
+      "referencias": { "Bosch": "2447222002" },
+      "aplicaciones": [],
+      "pagina_catalogo": 32
+    },
+
+
+    "1256/2": {
+      "codigo": "1256/2",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador para trampa de agua",
+      "medidas": "R. 24 x 1,5 mm",
+      "referencias": { "CAV": "9001-090A" },
+      "aplicaciones": [],
+      "pagina_catalogo": 32
+    },
+
+
+    "1256/3": {
+      "codigo": "1256/3",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador para trampa de agua Diesel ligero",
+      "medidas": "R. 23 x 1 mm",
+      "referencias": {},
+      "aplicaciones": [],
+      "pagina_catalogo": 32
+    },
+
+
+    "1256/4": {
+      "codigo": "1256/4",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador para trampa de agua Universal",
+      "medidas": "R. 24 x 1 mm",
+      "referencias": {},
+      "aplicaciones": [],
+      "pagina_catalogo": 32
+    },
+
+
+    "1256/5": {
+      "codigo": "1256/5",
+      "categoria": "Cebadores para Bombas de Alimentacion",
+      "descripcion": "Cebador con capuchon",
+      "referencias": {},
+      "aplicaciones": [],
+      "nota": "Pieza fisica distinta al 1256 y 1256 R. Verificar largo, cuerpo y rosca",
+      "pagina_catalogo": 32
+    },
+
+
+    "1063": {
+      "codigo": "1063",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "categoria_en": "Piston Type Feeding Pumps",
+      "descripcion": "Bomba de alimentacion a embolo Mercedes-Benz/Deutz con filtro, cuerpo de aluminio",
+      "referencias": { "Bosch": "0440003176" },
+      "aplicaciones": [
+        "Mercedes-Benz con filtro, cuerpo aluminio",
+        "Mercedes-Benz L/LO 911 OM 352", "Mercedes-Benz L/LO 1112 OM 352",
+        "Mercedes-Benz L/LO 1114 OM 352", "Mercedes-Benz L 1517 OM 352A",
+        "Mercedes-Benz O 170 OM 352A", "Mercedes-Benz Marino OM 352A",
+        "Mercedes-Benz Estacionario OM 352A",
+        "Deutz TR A46/U F2L 1114", "Deutz TR A46/U-F2 L 1114",
+        "Deutz TR A65-F3-L 2114"
+      ],
+      "componentes_principales": {
+        "1": "Cuerpo de Bba. aluminio - Bosch 2445103112",
+        "2": "Embolo 21,984 mm - Bosch 2449998709",
+        "19": "Cebador de mano corto - Bosch 2447222000 (= cod. 1255)"
+      },
+      "pagina_catalogo": 9
+    },
+
+
+    "1063H": {
+      "codigo": "1063H",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba de alimentacion a embolo Mercedes-Benz/Deutz con filtro, cuerpo de hierro",
+      "referencias": { "Bosch": "0440003176" },
+      "aplicaciones": ["Mercedes-Benz con filtro, cuerpo hierro"],
+      "pagina_catalogo": 9
+    },
+
+
+    "1063/P": {
+      "codigo": "1063/P",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion John Deere TR8430 con filtro, cuerpo aluminio",
+      "referencias": { "Bosch": "0440008024" },
+      "aplicaciones": ["John Deere TR 8430 con filtro, cuerpo aluminio"],
+      "pagina_catalogo": 10
+    },
+
+
+    "1063/PH": {
+      "codigo": "1063/PH",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion John Deere TR8430 con filtro, cuerpo hierro",
+      "referencias": { "Bosch": "0440008024" },
+      "aplicaciones": ["John Deere TR 8430 con filtro, cuerpo hierro"],
+      "pagina_catalogo": 10
+    },
+
+
+    "1063/1": {
+      "codigo": "1063/1",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Mercedes-Benz 170-RD sin filtro, cuerpo aluminio",
+      "referencias": { "Bosch": "0440003190" },
+      "aplicaciones": ["Mercedes-Benz 170-RD sin filtro, cuerpo aluminio"],
+      "pagina_catalogo": 10
+    },
+
+
+    "1063/1H": {
+      "codigo": "1063/1H",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Mercedes-Benz 170-RD sin filtro, cuerpo hierro",
+      "referencias": { "Bosch": "0440003190" },
+      "aplicaciones": ["Mercedes-Benz 170-RD sin filtro, cuerpo hierro"],
+      "pagina_catalogo": 10
+    },
+
+
+    "1063/1M": {
+      "codigo": "1063/1M",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion tipo A sin filtro Deutz Camion 200D16FL, cuerpo aluminio",
+      "referencias": { "Bosch": "0440003178" },
+      "aplicaciones": [
+        "Deutz Camion 200D16FL-FBL413",
+        "Deutz Omnibus 200RS12-FBL413"
+      ],
+      "pagina_catalogo": 11
+    },
+
+
+    "1063/1P": {
+      "codigo": "1063/1P",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat sin filtro, cuerpo aluminio",
+      "referencias": { "Bosch": "0440008007" },
+      "aplicaciones": [
+        "Fiat Estacionario 8210",
+        "Fiat Camion 619/697-221A (8219) N1"
+      ],
+      "pagina_catalogo": 11
+    },
+
+
+    "1063/1PF": {
+      "codigo": "1063/1PF",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Saab Scania cuerpo de aluminio",
+      "referencias": { "Bosch": "0440008004" },
+      "aplicaciones": [
+        "Saab Scania L111-LT111-D11",
+        "Saab Scania L111-BR116-D11",
+        "Saab Scania L111-LT111-DS11",
+        "Saab Scania LS111-DS11"
+      ],
+      "pagina_catalogo": 12
+    },
+
+
+    "1063/2": {
+      "codigo": "1063/2",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Volvo-Fiat cuerpo de aluminio",
+      "referencias": { "Bosch": "0440001029" },
+      "aplicaciones": ["Volvo 395-495", "Fiat con bomba tipo B"],
+      "componente_cebador": "1256 (Cebador largo)",
+      "pagina_catalogo": 12
+    },
+
+
+    "1063/3": {
+      "codigo": "1063/3",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Hanomag R40-R45",
+      "referencias": { "Bosch": "0440001006" },
+      "aplicaciones": ["Hanomag R40", "Hanomag R45"],
+      "componente_cebador": "1256 (Cebador largo)",
+      "pagina_catalogo": 13
+    },
+
+
+    "1063/4B": {
+      "codigo": "1063/4B",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat-Deutz cuerpo de aluminio",
+      "referencias": { "Bosch": "0440004055" },
+      "aplicaciones": [
+        "Fiat-Deutz cuerpo aluminio",
+        "Deutz TR A85-F4L1114", "Deutz TR A85-F4L2114",
+        "Deutz TR A130-F6L1114", "Deutz BF6L913",
+        "Inarmo Cimarron"
+      ],
+      "componente_cebador": "1256 (Cebador largo)",
+      "pagina_catalogo": 13
+    },
+
+
+    "1063/4BH": {
+      "codigo": "1063/4BH",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat-Deutz cuerpo de hierro",
+      "referencias": { "Bosch": "0440004055" },
+      "aplicaciones": ["Fiat-Deutz cuerpo hierro"],
+      "pagina_catalogo": 13
+    },
+
+
+    "1063/24": {
+      "codigo": "1063/24",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat cuerpo de aluminio",
+      "aplicaciones": [
+        "Fiat TR 800-CO3/130T611",
+        "Fiat TR 800E-CO3/130T611",
+        "Fiat TR 700-CO3/130T606",
+        "Fiat TR 500 CN3/615",
+        "Fiat TR 400 E-31/1003",
+        "Fiat TR 500 S CN3/635",
+        "Fiat TR 600 E-31/1005"
+      ],
+      "pagina_catalogo": 14
+    },
+
+
+    "1063/41": {
+      "codigo": "1063/41",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat cuerpo de aluminio",
+      "referencias": { "Bosch": "9440080000" },
+      "aplicaciones": [
+        "Fiat TR 600-CO3/130T611",
+        "Fiat TR 700-CO2D606-70",
+        "Fiat TR 700-CO3/130T606",
+        "Fiat TR 500 CN3/615",
+        "Fiat TR 400E-31/1003",
+        "Fiat TR 500 S CN3/635",
+        "Fiat TR 600E-31/1005"
+      ],
+      "pagina_catalogo": 14
+    },
+
+
+    "1063/34F": {
+      "codigo": "1063/34F",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Deutz cuerpo de aluminio",
+      "referencias": { "Bosch": "0440004055" },
+      "aplicaciones": [
+        "Deutz TR A85-F4L1114", "Deutz TR A85-F4L2114",
+        "Deutz TR A130-F6L1114", "Deutz BF6L913",
+        "Inarmo Cimarron"
+      ],
+      "pagina_catalogo": 15
+    },
+
+
+    "1063/4L": {
+      "codigo": "1063/4L",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Fiat cuerpo de aluminio",
+      "referencias": { "Bosch": "9440080003" },
+      "aplicaciones": [
+        "Fiat TR 660-35/1006",
+        "Fiat TR 760-34/1001"
+      ],
+      "pagina_catalogo": 15
+    },
+
+
+    "1063/5": {
+      "codigo": "1063/5",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Mercedes-Benz L608D OM 314",
+      "referencias": { "Bosch": "0440004040" },
+      "aplicaciones": [
+        "Mercedes-Benz L608D OM 314",
+        "Mercedes-Benz Unimog OM 352",
+        "Fiat TR 900-CP3/620", "Fiat TR 900E-61/1013",
+        "Fiat TR 1100-CP3/720", "Fiat TR 1100-62/1014",
+        "Cenelion 673-CP3/5000"
+      ],
+      "pagina_catalogo": 16
+    },
+
+
+    "1063/9": {
+      "codigo": "1063/9",
+      "categoria": "Bombas de Alimentacion a Embolo",
+      "descripcion": "Bomba alimentacion Perkins 4-203, Perkins potenciado/5305, Perkins reforma y cardenero",
+      "aplicaciones": [
+        "Perkins 4-203", "Perkins potenciado/5305", "Perkins reforma y cardenero"
+      ],
+      "pagina_catalogo": 16
+    },
+
+
+    "1063/60": {
+      "codigo": "1063/60",
+      "categoria": "Bombas de Alimentacion a Embolo con Perno",
+      "descripcion": "Bomba alimentacion a embolo con perno para Mercedes-Benz OM",
+      "aplicaciones": ["Mercedes-Benz OM (varios)"],
+      "pagina_catalogo": 19
+    },
+
+
+    "1063/61": {
+      "codigo": "1063/61",
+      "categoria": "Bombas de Alimentacion a Embolo con Perno",
+      "descripcion": "Bomba alimentacion a embolo con perno para Kamaz",
+      "aplicaciones": ["Kamaz"],
+      "pagina_catalogo": 19
+    },
+
+
+    "1063/63": {
+      "codigo": "1063/63",
+      "categoria": "Bombas de Alimentacion a Embolo con Perno",
+      "descripcion": "Bomba alimentacion a embolo con perno para motor MWM sin filtro",
+      "aplicaciones": ["Motor MWM sin filtro"],
+      "pagina_catalogo": 20
+    },
+
+
+    "1063/64": {
+      "codigo": "1063/64",
+      "categoria": "Bombas de Alimentacion a Embolo con Perno",
+      "descripcion": "Bomba alimentacion a embolo con perno para motor MWM con filtro",
+      "aplicaciones": ["Motor MWM con filtro"],
+      "pagina_catalogo": 20
+    },
+
+
+    "1063/10": {
+      "codigo": "1063/10",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "categoria_en": "Diaphragm Type Feeding Pumps",
+      "descripcion": "Bomba de alimentacion a diafragma para Bedford 1960/66",
+      "aplicaciones": ["Bedford 1960/66"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/11": {
+      "codigo": "1063/11",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins 305/4-203 serie 1 y 2",
+      "aplicaciones": ["Perkins 305/4-203 serie 1", "Perkins 305/4-203 serie 2"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/12": {
+      "codigo": "1063/12",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins 354 fase 1 y 2",
+      "aplicaciones": ["Perkins 354 fase 1", "Perkins 354 fase 2"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/13": {
+      "codigo": "1063/13",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Chevrolet 350",
+      "aplicaciones": ["Chevrolet 350"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/14": {
+      "codigo": "1063/14",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Indenor 6 cilindros",
+      "aplicaciones": ["Indenor 6 cilindros"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/15": {
+      "codigo": "1063/15",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Medio cuerpo bomba de alimentacion Perkins",
+      "aplicaciones": ["Perkins"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/16": {
+      "codigo": "1063/16",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins 354 fase IV",
+      "aplicaciones": ["Perkins 354 fase IV"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/17": {
+      "codigo": "1063/17",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins/152",
+      "aplicaciones": ["Perkins 152"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/18": {
+      "codigo": "1063/18",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para John Deere 2420/3420",
+      "aplicaciones": ["John Deere 2420", "John Deere 3420"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/18 sv": {
+      "codigo": "1063/18 sv",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para John Deere 4239-6350 sin vaso",
+      "aplicaciones": ["John Deere 4239-6350"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19": {
+      "codigo": "1063/19",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Bordward V/M",
+      "aplicaciones": ["Bordward V/M"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19A": {
+      "codigo": "1063/19A",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Maxion Rover (Pick Up Chevrolet)",
+      "aplicaciones": ["Maxion Rover Pick Up Chevrolet"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19B": {
+      "codigo": "1063/19B",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Maxion Rover Opalanca cebadora (Mercedes-Benz Sprinter)",
+      "aplicaciones": ["Maxion Rover Opalanca cebadora", "Mercedes-Benz Sprinter"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19C": {
+      "codigo": "1063/19C",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins/Maxion motor 4-236 GM D 10",
+      "aplicaciones": ["Perkins/Maxion motor 4-236 GM D 10"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19D": {
+      "codigo": "1063/19D",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins/Maxion motor 4-236 y 4-248",
+      "aplicaciones": ["Perkins/Maxion motor 4-236", "Perkins/Maxion motor 4-248"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19E": {
+      "codigo": "1063/19E",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Perkins/Maxion motor Q20 4-236/GM D 20 D 40",
+      "aplicaciones": ["Perkins/Maxion motor Q20 4-236/GM D20 D40"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19F": {
+      "codigo": "1063/19F",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Fiat Iveco Dayli y Ducato 2.5",
+      "aplicaciones": ["Fiat Iveco Daily", "Fiat Ducato 2.5"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/19G": {
+      "codigo": "1063/19G",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Fiat Iveco Eurocargo (original)",
+      "aplicaciones": ["Fiat Iveco Eurocargo original"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/40": {
+      "codigo": "1063/40",
+      "categoria": "Bombas de Alimentacion a Diafragma",
+      "descripcion": "Bomba diafragma para Deutz 913",
+      "aplicaciones": ["Deutz 913"],
+      "pagina_catalogo": 17
+    },
+
+
+    "1063/30": {
+      "codigo": "1063/30",
+      "categoria": "Bomba de Alimentacion Manual",
+      "categoria_en": "Circuit Filling Type Feeding Pumps",
+      "descripcion": "Bomba de alimentacion manual para llenado de circuito Deutz",
+      "referencias": { "Bosch": "0440011002" },
+      "aplicaciones": ["Deutz"],
+      "pagina_catalogo": 18
+    },
+
+
+    "1063/31": {
+      "codigo": "1063/31",
+      "categoria": "Bomba de Alimentacion Manual",
+      "descripcion": "Bomba alimentacion manual para llenado de circuito reforma M.Benz-OM",
+      "aplicaciones": ["Mercedes-Benz OM reforma"],
+      "pagina_catalogo": 18
+    },
+
+
+    "1063/31C": {
+      "codigo": "1063/31C",
+      "categoria": "Bomba de Alimentacion Manual",
+      "descripcion": "Bomba alimentacion manual para llenado circuito reforma M.Benz-OM con prefiltro",
+      "aplicaciones": ["Mercedes-Benz OM reforma con prefiltro"],
+      "pagina_catalogo": 18
+    },
+
+
+    "204-4300/1": {
+      "codigo": "204-4300/1",
+      "categoria": "Filtros de Combustible",
+      "categoria_en": "Fuel Filters",
+      "descripcion": "Filtro de combustible Mercedes-Benz",
+      "medidas": "Rosca unidad sellada 1\"12, Rosca purgador M-21x1,25-6H",
+      "aplicaciones": ["Mercedes-Benz"],
+      "pagina_catalogo": 18
+    },
+
+
+    "204-4300/2": {
+      "codigo": "204-4300/2",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro de combustible Scania",
+      "medidas": "Rosca unidad sellada 1\"14, Rosca purgador M-21x1,25-6H",
+      "aplicaciones": ["Scania"],
+      "pagina_catalogo": 18
+    },
+
+
+    "301-4301/1": {
+      "codigo": "301-4301/1",
+      "categoria": "Tapas Filtro Combustible",
+      "descripcion": "Tapa filtro combustible Mercedes-Benz, Rosca 1\"12",
+      "aplicaciones": [
+        "Iveco Eurocargo/Erutecat",
+        "Mercedes-Benz 1938 Electronico",
+        "Mercedes-Benz Omnibus 0400",
+        "Volvo Camiones NL10/NL12",
+        "Mercedes-Benz Camiones 1620/1218"
+      ],
+      "pagina_catalogo": 18
+    },
+
+
+    "301-4301/2": {
+      "codigo": "301-4301/2",
+      "categoria": "Tapas Filtro Combustible",
+      "descripcion": "Tapa filtro combustible Mercedes-Benz, Rosca entrada/salida 14x1,5, filtro 1\"12",
+      "aplicaciones": [
+        "Iveco Eurocargo/Erutecat",
+        "Mercedes-Benz 1938 Electronico",
+        "Mercedes-Benz Omnibus 0400",
+        "Volvo Camiones NL10/NL12",
+        "Mercedes-Benz Camiones 1620/1218"
+      ],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4301/3": {
+      "codigo": "301-4301/3",
+      "categoria": "Tapas Filtro Combustible",
+      "descripcion": "Tapa filtro combustible Mercedes-Benz, Rosca entrada/salida 16x1,5, filtro 1\"12",
+      "aplicaciones": ["Camiones Cargo", "Iveco", "Scania"],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4301/4": {
+      "codigo": "301-4301/4",
+      "categoria": "Tapas Filtro Combustible",
+      "descripcion": "Tapa filtro combustible Scania, Rosca entrada/salida 16x1,5, filtro 1\"14",
+      "aplicaciones": [
+        "Scania Omnibus", "Scania Camiones", "Camiones Cargo", "Iveco"
+      ],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4401": {
+      "codigo": "301-4401",
+      "categoria": "Bombetas",
+      "descripcion": "Bombeta universal con cebador y membrana",
+      "medidas": "Rosca 16 x 1,5",
+      "aplicaciones": ["Universal"],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4101": {
+      "codigo": "301-4101",
+      "categoria": "Tapas",
+      "descripcion": "Tapa 4 bocas para unidad sellada - reforma Maxion, MWM, Cumming",
+      "medidas": "Rosca unidad sellada 16x1,5, Roscas laterales 14x1,5",
+      "aplicaciones": ["Maxion reforma", "MWM reforma", "Cummins reforma"],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4201": {
+      "codigo": "301-4201",
+      "categoria": "Tapas",
+      "descripcion": "Tapa 4 bocas para unidad sellada - reforma Maxion, MWM, Cummins",
+      "medidas": "Rosca unidad sellada 3/4-16, Roscas laterales 14x1,5",
+      "aplicaciones": ["Maxion reforma", "MWM reforma", "Cummins reforma"],
+      "pagina_catalogo": 7
+    },
+
+
+    "301-4901": {
+      "codigo": "301-4901",
+      "categoria": "Filtros Universales",
+      "descripcion": "Filtro universal para aceites y combustibles",
+      "medidas": "Roscas entrada/salida NPT 1\" x 11/2",
+      "aplicaciones": [
+        "Surtidores de combustibles", "Motores estacionarios",
+        "Hidraulico", "Camiones y tractores Fiat"
+      ],
+      "variantes": {
+        "4901/1": "Rosca 1\" x 12",
+        "4901/2": "Rosca 1\" x 14",
+        "4901/3": "Rosca 3/4-16",
+        "4901/4": "Version sin brida Rosca 1\" x 12"
+      },
+      "pagina_catalogo": 8
+    },
+
+
+    "301-4307": {
+      "codigo": "301-4307",
+      "categoria": "Filtros",
+      "descripcion": "Vaso decantador de aluminio inyectado para conjunto filtro Mercedes-Benz/Scania",
+      "medidas": "Rosca purgador M-21 x 1,25 -6H",
+      "aplicaciones": ["Scania", "Mercedes-Benz"],
+      "pagina_catalogo": 8
+    },
+
+
+    "301-5200/1": {
+      "codigo": "301-5200/1",
+      "categoria": "Tapas Reforma con Cebador",
+      "descripcion": "Tapa reforma 4301 con cebador tipo Racor",
+      "medidas": "Roscas entrada/salida M14x1,5, Rosca filtro 1\"12H",
+      "aplicaciones": [
+        "Iveco Eurocargo/Erutecat",
+        "Mercedes-Benz 1938 Electronico",
+        "Mercedes-Benz Camiones 1620/1218",
+        "Mercedes-Benz Omnibus 0400-OM 904-906",
+        "Volvo Camiones NL10/NL12"
+      ],
+      "pagina_catalogo": 8
+    },
+
+
+    "301-5200/2": {
+      "codigo": "301-5200/2",
+      "categoria": "Tapas Reforma con Cebador",
+      "descripcion": "Tapa reforma 4301 con cebador tipo Racor",
+      "medidas": "Roscas entrada/salida M14x1,5, Rosca filtro 1\"14H",
+      "aplicaciones": [
+        "Camiones Cargo Ford 14.000 con motores Cummins",
+        "Iveco Eurocargo/Brasil",
+        "Scania Camiones 94/14/124",
+        "Scania Omnibus 114/124"
+      ],
+      "pagina_catalogo": 8
+    },
+
+
+    "301-5001": {
+      "codigo": "301-5001",
+      "categoria": "Tapas con Cebador y Membrana",
+      "descripcion": "Tapa con cebador y membrana para camiones Mercedes-Benz",
+      "medidas": "Rosca entrada/salida M16x1,5, Rosca filtro 1\"12H",
+      "aplicaciones": [
+        "Mercedes-Benz OM904", "Mercedes-Benz ATEGO 1315/1414/1518",
+        "Mercedes-Benz 1718", "Mercedes-Benz OM904LA ACELO915",
+        "Mercedes-Benz ACELO 7DC", "Mercedes-Benz OM906"
+      ],
+      "pagina_catalogo": 45
+    },
+
+
+    "205-0300": {
+      "codigo": "205-0300",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins reforma",
+      "aplicaciones": ["Perkins 6-354 Fase II Turbo con unidad sellada"],
+      "pagina_catalogo": 33
+    },
+
+
+    "205-0350": {
+      "codigo": "205-0350",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins reforma",
+      "aplicaciones": ["Perkins 6-354 Fase II Turbo con unidad sellada"],
+      "pagina_catalogo": 33
+    },
+
+
+    "205-0700": {
+      "codigo": "205-0700",
+      "categoria": "Filtros de Aceite",
+      "descripcion": "Filtro de aceite Perkins",
+      "aplicaciones": [
+        "Perkins 3-152, 4-203, 6-305, 6-354 con unidad sellada"
+      ],
+      "pagina_catalogo": 24
+    },
+
+
+    "205-2000": {
+      "codigo": "205-2000",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite c/salida para refrigerador",
+      "aplicaciones": ["Perkins 6-354 Fase II Turbo con unidad sellada"],
+      "pagina_catalogo": 33
+    },
+
+
+    "205-2300/1": {
+      "codigo": "205-2300/1",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins con unidad sellada",
+      "aplicaciones": ["Perkins 6-354 con unidad sellada"],
+      "variante_205-2300/2": "Con agujero rosca 3/8 salida p/lubric. depresor",
+      "pagina_catalogo": 33
+    },
+
+
+    "205-2350/1": {
+      "codigo": "205-2350/1",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins con unidad sellada",
+      "aplicaciones": ["Perkins 6-354 con unidad sellada"],
+      "variante_205-2300/2": "Con agujero rosca 3/8 salida p/lubric. depresor",
+      "pagina_catalogo": 33
+    },
+
+
+    "205-2400": {
+      "codigo": "205-2400",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins agricola industrial",
+      "aplicaciones": [
+        "Perkins 3-152", "Perkins 4-203", "Perkins 6-305 PF",
+        "Con unidad sellada"
+      ],
+      "pagina_catalogo": 33
+    },
+
+
+    "205-2450": {
+      "codigo": "205-2450",
+      "categoria": "Filtros de Aceite Perkins",
+      "descripcion": "Filtro de aceite Perkins agricola industrial",
+      "aplicaciones": ["Perkins 3-152", "Perkins 4-203", "Perkins 6-305 PF"],
+      "pagina_catalogo": 33
+    },
+
+
+    "302-2401": {
+      "codigo": "302-2401",
+      "categoria": "Reformas",
+      "descripcion": "Reforma de tapa 302-2701 para unidad sellada",
+      "pagina_catalogo": 24
+    },
+
+
+    "203-3500": {
+      "codigo": "203-3500",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro de combustible dual Scania",
+      "medidas": "Entrada y salida rosca 14M x 1,5mm, 2 unidades selladas",
+      "aplicaciones": ["Scania 111-112 y otros"],
+      "pagina_catalogo": 45
+    },
+
+
+    "1073/1": {
+      "codigo": "1073/1",
+      "categoria": "Bulones Perforados",
+      "categoria_en": "Perforated Bolts",
+      "descripcion": "Bulon perforado para bomba EP/VA (tope ralenti)",
+      "referencias": { "Bosch": "2911201702" },
+      "aplicaciones": ["Bomba EP/VA tope ralenti"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074": {
+      "codigo": "1074",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 20 x 1,5 mm",
+      "medidas": "20 x 1,5 mm",
+      "aplicaciones": [],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/1": {
+      "codigo": "1074/1",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 12,7 mm NF Perkins corto",
+      "medidas": "12,7 mm NF Perkins (corto)",
+      "aplicaciones": ["Perkins corto"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/2": {
+      "codigo": "1074/2",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 12,7 mm NF Perkins largo",
+      "medidas": "12,7 mm NF Perkins (largo)",
+      "aplicaciones": ["Perkins largo"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/3": {
+      "codigo": "1074/3",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 9,5 mm NF Perkins conexion DPA",
+      "medidas": "9,5 mm NF Perkins",
+      "referencias": { "CAV": "7123-339" },
+      "aplicaciones": ["Perkins conexion DPA"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/4": {
+      "codigo": "1074/4",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado de filtro Fiat 14 x 1,5 mm",
+      "medidas": "14 x 1,5 mm",
+      "referencias": { "Bosch": "2911205703" },
+      "aplicaciones": ["Filtro Fiat"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/5": {
+      "codigo": "1074/5",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 22 x 1,5 mm",
+      "medidas": "22 x 1,5 mm",
+      "aplicaciones": [],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/6": {
+      "codigo": "1074/6",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 24 x 1,5 mm",
+      "medidas": "24 x 1,5 mm",
+      "aplicaciones": [],
+      "pagina_catalogo": 22
+    },
+
+
+    "1074/R1": {
+      "codigo": "1074/R1",
+      "categoria": "Bulones Perforados",
+      "descripcion": "Bulon perforado 9,5 mm NF Perkins con valvula",
+      "medidas": "9,5 mm NF Perkins",
+      "referencias": { "CAV": "7138-177A" },
+      "aplicaciones": ["Perkins con valvula"],
+      "pagina_catalogo": 22
+    },
+
+
+    "1251": {
+      "codigo": "1251",
+      "categoria": "Capuchones de Inyector",
+      "categoria_en": "Injector Hoods",
+      "descripcion": "Capuchon de inyector Bedford original",
+      "medidas": "R. 21 x 1,5-8 x 0,75 mm",
+      "referencias": { "CAV": "7008-226" },
+      "aplicaciones": ["Bedford original"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1251/1": {
+      "codigo": "1251/1",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Bedford reforma Perkins 354-Bosio-Aries",
+      "medidas": "R. 21 x 1,5-8 x 0,75 mm",
+      "referencias": { "CAV": "7008-226" },
+      "aplicaciones": ["Bedford reforma Perkins 354", "Bedford reforma Bosio", "Bedford reforma Aries"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1252": {
+      "codigo": "1252",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Perkins 6-305 original",
+      "medidas": "R. 22 x 1,5-8 x 0,75 mm",
+      "referencias": { "CAV": "7008-462" },
+      "aplicaciones": ["Perkins 6-305 original"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1252/1": {
+      "codigo": "1252/1",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Perkins 6-305 reforma",
+      "medidas": "R. 22 x 1,5-8 x 0,75 mm",
+      "aplicaciones": ["Perkins 6-305 reforma"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1252/2": {
+      "codigo": "1252/2",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Perkins 4-203 (ciego)",
+      "medidas": "R. 21 x 1,5 mm",
+      "aplicaciones": ["Perkins 4-203"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1253": {
+      "codigo": "1253",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Aclo-Leyland",
+      "medidas": "R. 21 x 1,5 mm",
+      "aplicaciones": ["Aclo-Leyland"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1254": {
+      "codigo": "1254",
+      "categoria": "Capuchones de Inyector",
+      "descripcion": "Capuchon inyector Magirus",
+      "medidas": "R. 21 x 1,5-8 x 1 mm",
+      "aplicaciones": ["Magirus"],
+      "pagina_catalogo": 31
+    },
+
+
+    "1268": {
+      "codigo": "1268",
+      "categoria": "Cierres de Plasticos",
+      "categoria_en": "Plastic Lids",
+      "descripcion": "Cierre de plastico 12 x 1,5 mm (rosca macho)",
+      "medidas": "12 x 1,5 mm",
+      "pagina_catalogo": 34
+    },
+
+
+    "1268/1": {
+      "codigo": "1268/1",
+      "categoria": "Cierres de Plasticos",
+      "descripcion": "Cierre de plastico 12 mm (sin rosca)",
+      "medidas": "12 mm",
+      "pagina_catalogo": 34
+    },
+
+
+    "1269": {
+      "codigo": "1269",
+      "categoria": "Cierres de Plasticos",
+      "descripcion": "Cierre de plastico 14 x 1,5 mm (rosca macho)",
+      "medidas": "14 x 1,5 mm",
+      "pagina_catalogo": 34
+    },
+
+
+    "1269/1": {
+      "codigo": "1269/1",
+      "categoria": "Cierres de Plasticos",
+      "descripcion": "Cierre de plastico 14 mm (sin rosca)",
+      "medidas": "14 mm",
+      "pagina_catalogo": 34
+    },
+
+
+    "1270": {
+      "codigo": "1270",
+      "categoria": "Cuerpo de Inyector",
+      "categoria_en": "Injector Barrel",
+      "descripcion": "Cuerpo de inyector para Mercedes-Benz 170/3500/312 RD",
+      "referencias": { "Bosch": "2435100003" },
+      "aplicaciones": ["Mercedes-Benz 170/3500/312 RD"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/1": {
+      "codigo": "1270/1",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Mercedes-Benz 170/3500/312 RD",
+      "referencias": { "Bosch": "0430242009" },
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/2": {
+      "codigo": "1270/2",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Perkins 6-305",
+      "referencias": { "CAV": "3255050" },
+      "aplicaciones": ["Perkins 6-305"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/3": {
+      "codigo": "1270/3",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Perkins 6-354",
+      "referencias": { "CAV": "BKBL67S5400" },
+      "aplicaciones": ["Perkins 6-354"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/4": {
+      "codigo": "1270/4",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Bedford Inarmo",
+      "referencias": { "CAV": "B432A12008" },
+      "aplicaciones": ["Bedford Inarmo"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/5": {
+      "codigo": "1270/5",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Mercedes-Benz 1114",
+      "referencias": { "Bosch": "0430232004" },
+      "aplicaciones": ["Mercedes-Benz 1114"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/6": {
+      "codigo": "1270/6",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Fiat 619 N",
+      "referencias": { "Bosch": "0431204055" },
+      "aplicaciones": ["Fiat 619 N"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1270/14": {
+      "codigo": "1270/14",
+      "categoria": "Cuerpo de Inyector",
+      "descripcion": "Cuerpo de inyector para Deutz n13",
+      "referencias": { "Bosch": "0431212024" },
+      "aplicaciones": ["Deutz n13"],
+      "pagina_catalogo": 34
+    },
+
+
+    "1375": {
+      "codigo": "1375",
+      "categoria": "Filtro de Gasoil",
+      "categoria_en": "Diesel Oil Filter",
+      "descripcion": "Filtro de gasoil 1/2 litro tipo Bosch",
+      "aplicaciones": ["Tipo Bosch 1/2 litro"],
+      "pagina_catalogo": 40
+    },
+
+
+    "1376": {
+      "codigo": "1376",
+      "categoria": "Filtro de Gasoil",
+      "descripcion": "Filtro de gasoil 1 litro tipo Bosch",
+      "aplicaciones": ["Tipo Bosch 1 litro"],
+      "pagina_catalogo": 40
+    },
+
+
+    "1376/1": {
+      "codigo": "1376/1",
+      "categoria": "Filtro Trampa de Agua Universal",
+      "descripcion": "Filtro trampa de agua universal con filtro celular",
+      "pagina_catalogo": 41
+    },
+
+
+    "1376/2": {
+      "codigo": "1376/2",
+      "categoria": "Trampa de Agua con Cebador",
+      "categoria_en": "Water Lock with Feeder",
+      "descripcion": "Trampa de agua con cebador",
+      "pagina_catalogo": 41
+    },
+
+
+    "1376/2C": {
+      "codigo": "1376/2C",
+      "descripcion": "Trampa de agua con cebador (variante C)",
+      "pagina_catalogo": 42
+    },
+
+
+    "1376/3": {
+      "codigo": "1376/3",
+      "categoria": "Trampa de Agua Universal",
+      "descripcion": "Trampa de agua universal con filtro de bronce",
+      "pagina_catalogo": 42
+    },
+
+
+    "1376/6": {
+      "codigo": "1376/6",
+      "categoria": "Duo Filtro",
+      "categoria_en": "Duplex Filter",
+      "descripcion": "Duo filtro para Perkins 354 FII-FIV y 305 sin vaso",
+      "aplicaciones": ["Perkins 354 FII-FIV", "Perkins 305"],
+      "variantes": {
+        "1376/6 A": "Con vaso de aluminio",
+        "1376/6 P": "Con vaso plastico",
+        "1376/6 V": "Con vaso de vidrio"
+      },
+      "pagina_catalogo": 43
+    },
+
+
+    "1376/7": {
+      "codigo": "1376/7",
+      "categoria": "Filtro de Gasoil",
+      "descripcion": "Filtro gasoil para Perkins 4-203 cuatro bocas sin vaso",
+      "aplicaciones": ["Perkins 4-203"],
+      "variantes": {
+        "1376/7 A": "Con vaso aluminio",
+        "1376/7 P": "Con vaso plastico",
+        "1376/7 B": "Con vaso de vidrio"
+      },
+      "pagina_catalogo": 43
+    },
+
+
+    "1376/8": {
+      "codigo": "1376/8",
+      "categoria": "Filtro de Gasoil",
+      "descripcion": "Filtro gasoil para Perkins 6-354 tres bocas sin vaso",
+      "aplicaciones": ["Perkins 6-354"],
+      "variantes": {
+        "1376/8 A": "Con vaso aluminio",
+        "1376/8 V": "Con vaso de vidrio"
+      },
+      "pagina_catalogo": 44
+    },
+
+
+    "1376/9": {
+      "codigo": "1376/9",
+      "categoria": "Duo Filtro",
+      "descripcion": "Duo filtro para Chevrolet-Bedford sin vaso",
+      "aplicaciones": ["Chevrolet-Bedford"],
+      "variantes": {
+        "1376/9 A": "Con vaso aluminio",
+        "1376/9 P": "Con vaso plastico",
+        "1376/9 V": "Con vaso de vidrio"
+      },
+      "pagina_catalogo": 44
+    },
+
+
+    "1376/10": {
+      "codigo": "1376/10",
+      "categoria": "Duo Filtro",
+      "descripcion": "Duo filtro para Mercedes-Benz 1114-606 etc. sin elemento filtrante",
+      "aplicaciones": ["Mercedes-Benz 1114-606 y otros"],
+      "pagina_catalogo": 45
+    },
+
+
+    "1376/11": {
+      "codigo": "1376/11",
+      "categoria": "Filtro Dual",
+      "descripcion": "Filtro combustible dual Scania",
+      "aplicaciones": ["Ver 203-3500"],
+      "pagina_catalogo": 45
+    },
+
+
+    "1376/12": {
+      "codigo": "1376/12",
+      "categoria": "Duo Filtro",
+      "descripcion": "Duo filtro 1 litro Mercedes-Benz-Deutz-Hanomag sin elemento filtrante",
+      "aplicaciones": ["Mercedes-Benz", "Deutz", "Hanomag"],
+      "pagina_catalogo": 46
+    },
+
+
+    "1376/13A": {
+      "codigo": "1376/13A",
+      "categoria": "Trampa de Agua con Cebador",
+      "descripcion": "Trampa de agua con cebador para Indenor tapa de aluminio, filtro celulosa, vaso plastico",
+      "aplicaciones": ["Indenor tapa aluminio"],
+      "pagina_catalogo": 46
+    },
+
+
+    "1376/13H": {
+      "codigo": "1376/13H",
+      "categoria": "Trampa de Agua con Cebador",
+      "descripcion": "Trampa de agua con cebador para Indenor tapa de hierro, filtro celulosa, vaso plastico",
+      "aplicaciones": ["Indenor tapa hierro"],
+      "pagina_catalogo": 46
+    },
+
+
+    "1376/14": {
+      "codigo": "1376/14",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro combustible para Fiat 147 con cebador",
+      "aplicaciones": ["Fiat 147 con cebador"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1376/15": {
+      "codigo": "1376/15",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro combustible para Fiat 147 con tetón",
+      "aplicaciones": ["Fiat 147 con teton"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1376/16": {
+      "codigo": "1376/16",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro combustible para Fiat 147 con cebador sin filtro",
+      "aplicaciones": ["Fiat 147"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1376/17": {
+      "codigo": "1376/17",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro combustible para Fiat 147 con teton sin filtro",
+      "aplicaciones": ["Fiat 147"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1376/18": {
+      "codigo": "1376/18",
+      "categoria": "Filtros de Combustible",
+      "descripcion": "Filtro combustible para Renault Trafic con cebador",
+      "aplicaciones": ["Renault Trafic"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1377": {
+      "codigo": "1377",
+      "categoria": "Filtros de Malla",
+      "categoria_en": "Net Filters",
+      "descripcion": "Filtro de malla para interior de vasito bomba, metalico con malla de bronce",
+      "referencias": { "Bosch": "1450410011" },
+      "pagina_catalogo": 47
+    },
+
+
+    "1377/1": {
+      "codigo": "1377/1",
+      "categoria": "Filtros de Malla",
+      "descripcion": "Filtro de malla para interior de vasito bomba, plastico con malla de bronce",
+      "referencias": { "Bosch": "1450410011" },
+      "pagina_catalogo": 47
+    },
+
+
+    "1377/R1": {
+      "codigo": "1377/R1",
+      "categoria": "Filtros de Malla",
+      "descripcion": "Filtro de malla para interior placa de extremo",
+      "referencias": { "CAV": "7123-620" },
+      "pagina_catalogo": 47
+    },
+
+
+    "1377/2": {
+      "codigo": "1377/2",
+      "categoria": "Filtros de Malla",
+      "descripcion": "Filtro de malla para tapón de tanque Mercedes-Benz 1114",
+      "aplicaciones": ["Mercedes-Benz 1114"],
+      "pagina_catalogo": 47
+    },
+
+
+    "1564/1": {
+      "codigo": "1564/1",
+      "categoria": "Prefiltro Completo",
+      "categoria_en": "Set of Prefilters",
+      "descripcion": "Prefiltro completo tipo Bedford",
+      "aplicaciones": ["Bedford"],
+      "pagina_catalogo": 62
+    },
+
+
+    "1564/2": {
+      "codigo": "1564/2",
+      "categoria": "Prefiltro Completo",
+      "descripcion": "Prefiltro completo tipo Perkins",
+      "aplicaciones": ["Perkins"],
+      "pagina_catalogo": 62
+    },
+
+
+    "1564/3": {
+      "codigo": "1564/3",
+      "categoria": "Prefiltro Completo",
+      "descripcion": "Prefiltro completo tipo Fiat",
+      "aplicaciones": ["Fiat"],
+      "pagina_catalogo": 62
+    },
+
+
+    "1564/6": {
+      "codigo": "1564/6",
+      "categoria": "Prefiltro Completo",
+      "descripcion": "Prefiltro completo para Deutz (rosca 14 mm)",
+      "aplicaciones": ["Deutz"],
+      "pagina_catalogo": 62
+    },
+
+
+    "1564/7": {
+      "codigo": "1564/7",
+      "categoria": "Prefiltro Completo",
+      "descripcion": "Prefiltro completo para Perkins-Deutz",
+      "aplicaciones": ["Perkins-Deutz"],
+      "pagina_catalogo": 62
+    },
+
+
+    "1568": {
+      "codigo": "1568",
+      "categoria": "Porta Toberas",
+      "categoria_en": "Nozzle Holders",
+      "descripcion": "Porta tobera para Perkins 6-305 paso grueso",
+      "medidas": "R. 20 x 1,5 mm",
+      "referencias": { "CAV": "7008-443A" },
+      "aplicaciones": ["Perkins 6-305 paso grueso"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1568/1": {
+      "codigo": "1568/1",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Perkins 4-203 paso fino",
+      "medidas": "R. 19 x 1,25 mm",
+      "referencias": { "CAV": "7008-443K" },
+      "aplicaciones": ["Perkins 4-203 paso fino"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1569": {
+      "codigo": "1569",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Scania Vabis 71 (corta)",
+      "medidas": "R. 20 x 1,5 mm",
+      "referencias": { "CAV": "7008-75D" },
+      "aplicaciones": ["Scania Vabis 71 (corta)"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1570": {
+      "codigo": "1570",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Scania Vabis 75 (larga)",
+      "medidas": "R. 20 x 1,5 mm",
+      "aplicaciones": ["Scania Vabis 75 (larga)"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1570/1": {
+      "codigo": "1570/1",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Scania Vabis L111",
+      "medidas": "R. 18 x 1,5 mm",
+      "aplicaciones": ["Scania Vabis L111"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1570/2": {
+      "codigo": "1570/2",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Indenor XD2/Diesel ligero",
+      "medidas": "R. Ext. 24 x 2 mm, R. Int. 22 x 1,5 mm",
+      "aplicaciones": ["Indenor XD2", "Diesel ligero"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1570/3": {
+      "codigo": "1570/3",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Fiat 147 Diesel",
+      "aplicaciones": ["Fiat 147 Diesel"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1571": {
+      "codigo": "1571",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Volvo",
+      "medidas": "R. 20 x 1,5 mm",
+      "referencias": { "Bosch": "2433458102" },
+      "aplicaciones": ["Volvo"],
+      "pagina_catalogo": 69
+    },
+
+
+    "1572": {
+      "codigo": "1572",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Bedford/Perkins 6-354",
+      "medidas": "R. 19 x 1,25 mm",
+      "referencias": { "CAV": "7008-187" },
+      "aplicaciones": ["Bedford", "Perkins 6-354"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1573/1": {
+      "codigo": "1573/1",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Deutz 913",
+      "medidas": "R. 22 x 1,5 mm",
+      "aplicaciones": ["Deutz 913"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1573/2": {
+      "codigo": "1573/2",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Fiat CP3 (larga)",
+      "medidas": "R. 3/4 16 hilos",
+      "aplicaciones": ["Fiat CP3 (larga)"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1573/4": {
+      "codigo": "1573/4",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Mercedes-Benz 220-300",
+      "aplicaciones": ["Mercedes-Benz 220-300"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1573/6": {
+      "codigo": "1573/6",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Scania Vabis 113 Intercooler",
+      "aplicaciones": ["Scania Vabis 113 Intercooler"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1574": {
+      "codigo": "1574",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Mercedes-Benz 312/3500/170-Rastrojero 42 y 52 HP",
+      "medidas": "R. 20 x 1,5 mm",
+      "referencias": { "Bosch": "2433458102" },
+      "aplicaciones": ["Mercedes-Benz 312", "Mercedes-Benz 3500", "Mercedes-Benz 170", "Rastrojero 42 HP", "Rastrojero 52 HP"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1574/1": {
+      "codigo": "1574/1",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Hanomag",
+      "medidas": "R. 20 x 1,2 mm",
+      "aplicaciones": ["Hanomag"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1574/3": {
+      "codigo": "1574/3",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Deutz",
+      "medidas": "R. 20 x 1,5 mm",
+      "aplicaciones": ["Deutz"],
+      "pagina_catalogo": 70
+    },
+
+
+    "1574/6": {
+      "codigo": "1574/6",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Mercedes-Benz 1114",
+      "medidas": "R. 24 x 1,5 mm",
+      "referencias": { "Bosch": "2433317244" },
+      "aplicaciones": ["Mercedes-Benz 1114"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1574/8": {
+      "codigo": "1574/8",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Fiat 619N/N1",
+      "medidas": "R. 19 x 1,5 mm",
+      "referencias": { "Bosch": "2433314057" },
+      "aplicaciones": ["Fiat 619N", "Fiat 619N1"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1574/9": {
+      "codigo": "1574/9",
+      "categoria": "Porta Toberas",
+      "descripcion": "Porta tobera para Scania Vabis 112/John Deere/Perkins Fase IV",
+      "medidas": "R. 19 x 0,75 mm",
+      "aplicaciones": ["Scania Vabis 112", "John Deere", "Perkins Fase IV"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1574/12": {
+      "codigo": "1574/12",
+      "categoria": "Porta Toberas / Puentes de Bujias",
+      "descripcion": "Puente de bujias para Rastrojero (agujero grande)",
+      "aplicaciones": ["Rastrojero (agujero grande)"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1575": {
+      "codigo": "1575",
+      "categoria": "Racord para Bombas e Inyectores (Conexiones)",
+      "categoria_en": "Couplers for Pumps and Injectors",
+      "descripcion": "Racord de purga de aire Mercedes-Benz 1112R",
+      "medidas": "R. 16 x 1,5 mm / 6 x 1,5 mm",
+      "referencias": { "Bosch": "1413462101" },
+      "aplicaciones": ["Mercedes-Benz 1112R"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1576": {
+      "codigo": "1576",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de purga aire Rastrojero/Mercedes-Benz 312/170",
+      "medidas": "R. 12 x 1,5 mm / 6 x 1 mm",
+      "aplicaciones": ["Rastrojero", "Mercedes-Benz 312", "Mercedes-Benz 170"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1577": {
+      "codigo": "1577",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de purga de aire bomba DPA (largo)",
+      "medidas": "R. 5/16 NF x 1/4 NF",
+      "aplicaciones": ["Bomba DPA (largo)"],
+      "pagina_catalogo": 71
+    },
+
+
+    "1578": {
+      "codigo": "1578",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de entrada bomba Mercedes-Benz 312/3500",
+      "medidas": "R. 14 x 1,5/14 x 1,5 mm",
+      "aplicaciones": ["Mercedes-Benz 312/3500"],
+      "pagina_catalogo": 72
+    },
+
+
+    "1579": {
+      "codigo": "1579",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de entrada bomba Bedford",
+      "medidas": "R. 14 x 1,5/12 x 1,5 mm",
+      "referencias": { "CAV": "7092-269" },
+      "aplicaciones": ["Bedford"],
+      "pagina_catalogo": 72
+    },
+
+
+    "1581": {
+      "codigo": "1581",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de valvula sobre presion",
+      "medidas": "R. 12 x 1,5/12 x 1,5 mm",
+      "referencias": { "Bosch": "1413350010" },
+      "pagina_catalogo": 72
+    },
+
+
+    "1581/5": {
+      "codigo": "1581/5",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de valvula sobre presion bba. alimentacion Fiat",
+      "medidas": "R. Ext. 16 x 1,5 mm, R. Int. 14 x 1,5 mm",
+      "aplicaciones": ["Fiat bomba alimentacion"],
+      "pagina_catalogo": 72
+    },
+
+
+    "1581/6": {
+      "codigo": "1581/6",
+      "categoria": "Racord para Bombas e Inyectores",
+      "descripcion": "Racord de entrada bta. de llenar circuito Deutz",
+      "medidas": "R. Ext. 20 x 1,5 mm, R. Int. 14 x 1,5 mm",
+      "aplicaciones": ["Deutz"],
+      "pagina_catalogo": 72
+    },
+
+
+    "1582": {
+      "codigo": "1582",
+      "categoria": "Racord Porta Valvulas (Union de Presion)",
+      "categoria_en": "Valve Holder Couplers (Pressure Coupling)",
+      "descripcion": "Racord porta valvulas bba. Tipo A",
+      "medidas": "R. 18 x 1,5/12 x 1,5 mm",
+      "referencias": { "CAV": "7032/3" },
+      "pagina_catalogo": 72
+    },
+
+
+    "1583": {
+      "codigo": "1583",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord porta valvulas bba. Tipo B",
+      "medidas": "R. 20 x 1,5/14 x 1,5 mm",
+      "referencias": { "Bosch": "1413372027" },
+      "pagina_catalogo": 72
+    },
+
+
+    "1584": {
+      "codigo": "1584",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord porta valvulas bba. tipo Mercedes-Benz",
+      "medidas": "R. 20 x 1,5/12 x 1,5 mm",
+      "referencias": { "Bosch": "1416725007" },
+      "aplicaciones": ["Bomba tipo Mercedes-Benz"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1585": {
+      "codigo": "1585",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord para bomba tipo Bedford",
+      "medidas": "R. 18 x 1,5/12 x 1,5 mm",
+      "referencias": { "CAV": "7118-76" },
+      "aplicaciones": ["Bedford"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1586": {
+      "codigo": "1586",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord bba. Volvo 395",
+      "medidas": "R. 20 x 1,5/14 x 1,5 mm",
+      "referencias": { "Bosch": "2413372031" },
+      "aplicaciones": ["Volvo 395"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1587": {
+      "codigo": "1587",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord bba. Volvo 495",
+      "medidas": "R. 20 x 1,5/14 x 1,5 mm",
+      "referencias": { "Bosch": "1413372127" },
+      "aplicaciones": ["Volvo 495"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1588": {
+      "codigo": "1588",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord bba. Scania Vabis 71",
+      "medidas": "R. 20 x 1,5/14 x 1,5 mm",
+      "referencias": { "CAV": "7097-340" },
+      "aplicaciones": ["Scania Vabis 71"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1589": {
+      "codigo": "1589",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord bba. Scania Vabis 75/76",
+      "medidas": "R. 20 x 1,5/12 x 1,5 mm",
+      "referencias": { "Bosch": "1413372027" },
+      "aplicaciones": ["Scania Vabis 75", "Scania Vabis 76"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1590": {
+      "codigo": "1590",
+      "categoria": "Racord Porta Valvulas",
+      "descripcion": "Racord bba. Mercedes-Benz 1114",
+      "medidas": "R. 20 x 1,5/12 x 1,5 mm",
+      "aplicaciones": ["Mercedes-Benz 1114"],
+      "pagina_catalogo": 73
+    },
+
+
+    "1821": {
+      "codigo": "1821",
+      "categoria": "Valvulas de Sobrepresion",
+      "categoria_en": "Overpressure Valves",
+      "descripcion": "Valvula de sobrepresion para Mercedes-Benz/Rastrojero",
+      "medidas": "R. ext. 14 x 1,5 mm, R. int. 14 x 1,5 mm",
+      "referencias": { "Bosch": "1557413010" },
+      "aplicaciones": ["Mercedes-Benz", "Rastrojero"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1821/1": {
+      "codigo": "1821/1",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para bba. EP/VA",
+      "referencias": { "Bosch": "1460362028" },
+      "aplicaciones": ["Bomba EP/VA"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1821/2": {
+      "codigo": "1821/2",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para bba. EP/VA (retorno)",
+      "referencias": { "Bosch": "1467413008" },
+      "aplicaciones": ["Bomba EP/VA retorno"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822": {
+      "codigo": "1822",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Rastrojero 52HP",
+      "medidas": "R. 12 x 1,5 mm",
+      "referencias": { "Bosch": "1417413012" },
+      "aplicaciones": ["Rastrojero 52HP"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/1": {
+      "codigo": "1822/1",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Fiat 411/U25/Someca M45",
+      "medidas": "R. 14 x 1,5 mm",
+      "referencias": { "Fiat": "758075" },
+      "aplicaciones": ["Fiat 411", "Fiat U25", "Someca M45"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/2": {
+      "codigo": "1822/2",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Deutz",
+      "medidas": "R. 14 x 1,5 mm",
+      "referencias": { "Bosch": "1417413001" },
+      "aplicaciones": ["Deutz"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/3": {
+      "codigo": "1822/3",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Mercedes-Benz 1114",
+      "medidas": "R. 14 x 1,5 mm",
+      "referencias": { "Bosch": "1417413000" },
+      "aplicaciones": ["Mercedes-Benz 1114"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/4": {
+      "codigo": "1822/4",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para filtro Mercedes-Benz 1114 (agujero calibrado)",
+      "medidas": "R. 14 x 1,5 mm y 16 x 1,5 mm",
+      "aplicaciones": ["Filtro Mercedes-Benz 1114"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/5": {
+      "codigo": "1822/5",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Fiat 619 / bba. P",
+      "medidas": "R. 14 x 1,5 mm",
+      "referencias": { "Bosch": "2417413013" },
+      "aplicaciones": ["Fiat 619", "Bba. P"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1822/8": {
+      "codigo": "1822/8",
+      "categoria": "Valvulas de Sobrepresion",
+      "descripcion": "Valvula de sobrepresion para Scania Vabis modelo nuevo",
+      "aplicaciones": ["Scania Vabis modelo nuevo"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1823/1": {
+      "codigo": "1823/1",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "categoria_en": "Feeding Pump Valves",
+      "descripcion": "Valvula de baquelita roja para bba. de alimentacion tipo Bosch",
+      "referencias": { "Bosch": "2443123021", "CAV": "7092-8" },
+      "aplicaciones": ["Bomba alimentacion tipo Bosch"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1824": {
+      "codigo": "1824",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "descripcion": "Valvula para bta. de alimentacion Perkins/Bedford",
+      "referencias": { "CAV": "7092-256", "AC": "5593866" },
+      "aplicaciones": ["Perkins", "Bedford"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1824/1": {
+      "codigo": "1824/1",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "descripcion": "Valvula para bta. de alimentacion Rastrojero 52HP / bta. llenar circuito Deutz",
+      "referencias": { "Bosch": "2447419000" },
+      "aplicaciones": ["Rastrojero 52HP", "Bta. llenar circuito Deutz"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1825": {
+      "codigo": "1825",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "descripcion": "Valvula para bta. de alimentacion Leyland (bronce)",
+      "referencias": { "CAV": "7092-39" },
+      "aplicaciones": ["Leyland"],
+      "pagina_catalogo": "final"
+    },
+
+
+    "1826": {
+      "codigo": "1826",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "descripcion": "Valvula antirretorno con rosca",
+      "pagina_catalogo": "final"
+    },
+
+
+    "1826/1": {
+      "codigo": "1826/1",
+      "categoria": "Valvulas para Bombas de Alimentacion",
+      "descripcion": "Valvula antirretorno aerea",
+      "pagina_catalogo": "final"
+    },
+
+
+    "1257": {
+      "codigo": "1257",
+      "categoria": "Cepillos de Bronce",
+      "categoria_en": "Bronce Brushes",
+      "descripcion": "Cepillo de bronce de dos hileras",
+      "pagina_catalogo": 32
+    },
+
+
+    "1258": {
+      "codigo": "1258",
+      "categoria": "Cepillos de Bronce",
+      "descripcion": "Cepillo de bronce de tres hileras",
+      "pagina_catalogo": 32
+    },
+
+
+    "1366": {
+      "codigo": "1366",
+      "categoria": "Embolo de Bombita Alimentadora",
+      "categoria_en": "Pumps Plungers",
+      "descripcion": "Embolo de bombita alimentadora medida standard",
+      "medidas": "21,984 mm",
+      "referencias": { "Bosch": "2429998709" },
+      "pagina_catalogo": 38
+    },
+
+
+    "1366/P": {
+      "codigo": "1366/P",
+      "categoria": "Embolo de Bombita Alimentadora",
+      "descripcion": "Embolo de bombita alimentadora medida standard (bombita P)",
+      "medidas": "21,984 mm standard",
+      "referencias": { "Bosch": "2440620022" },
+      "pagina_catalogo": 38
+    },
+
+
+    "1367": {
+      "codigo": "1367",
+      "categoria": "Embolo de Bombita Alimentadora",
+      "descripcion": "Embolo super medida 0,05",
+      "medidas": "+0,05 mm",
+      "referencias": { "Bosch": "2449998715" },
+      "pagina_catalogo": 38
+    },
+
+
+    "1368": {
+      "codigo": "1368",
+      "categoria": "Embolo de Bombita Alimentadora",
+      "descripcion": "Embolo super medida 0,10",
+      "medidas": "+0,10 mm",
+      "pagina_catalogo": 38
+    },
+
+
+    "1278": {
+      "codigo": "1278",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "categoria_en": "Pneumatic Regulator Diaphragm",
+      "descripcion": "Diafragma para regulador Bedford",
+      "referencias": { "CAV": "7034-19D" },
+      "aplicaciones": ["Bedford"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1279": {
+      "codigo": "1279",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Perkins",
+      "referencias": { "CAV": "7034-19A" },
+      "aplicaciones": ["Perkins"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1280": {
+      "codigo": "1280",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Volvo",
+      "referencias": { "CAV": "7034-19A" },
+      "aplicaciones": ["Volvo"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1281": {
+      "codigo": "1281",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Scania Vabis",
+      "referencias": { "CAV": "743419A" },
+      "aplicaciones": ["Scania Vabis"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1282": {
+      "codigo": "1282",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Leyland",
+      "referencias": { "CAV": "7034-19D" },
+      "aplicaciones": ["Leyland"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1283": {
+      "codigo": "1283",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Mercedes-Benz 170",
+      "referencias": { "Bosch": "EPME 17S96Z" },
+      "aplicaciones": ["Mercedes-Benz 170"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1284": {
+      "codigo": "1284",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador R.D. 42HP",
+      "referencias": { "Bosch": "EPME 17S96Z" },
+      "aplicaciones": ["R.D. 42HP"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1285": {
+      "codigo": "1285",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador R.D. 52HP",
+      "referencias": { "Bosch": "EPME 17S96Z" },
+      "aplicaciones": ["R.D. 52HP"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1286": {
+      "codigo": "1286",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Simms, Pick up, Chevrolet, Ford",
+      "referencias": { "Simms": "A26218" },
+      "aplicaciones": ["Simms", "Pick up", "Chevrolet", "Ford"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1287": {
+      "codigo": "1287",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Fiat U25",
+      "referencias": { "Fiat": "753163" },
+      "aplicaciones": ["Fiat U25"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1288": {
+      "codigo": "1288",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Fiat 4311",
+      "aplicaciones": ["Fiat 4311"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1289": {
+      "codigo": "1289",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Fiat R411",
+      "referencias": { "Fiat": "747232" },
+      "aplicaciones": ["Fiat R411"],
+      "pagina_catalogo": 35
+    },
+
+
+    "1290": {
+      "codigo": "1290",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Volvo Turbo",
+      "referencias": { "Bosch": "EPME 2281" },
+      "aplicaciones": ["Volvo Turbo"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1291": {
+      "codigo": "1291",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Toyota",
+      "aplicaciones": ["Toyota"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1309": {
+      "codigo": "1309",
+      "categoria": "Diafragmas para Reguladores Neumaticos",
+      "descripcion": "Diafragma para regulador Simms, Ford Thames",
+      "referencias": { "Simms": "P84091" },
+      "aplicaciones": ["Simms", "Ford Thames"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1326": {
+      "codigo": "1326",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "categoria_en": "Feeding Pumps Diaphragm",
+      "descripcion": "Diafragma para bombita alimentadora Bedford",
+      "referencias": { "CAV": "7092/205" },
+      "aplicaciones": ["Bedford"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1327": {
+      "codigo": "1327",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Perkins",
+      "referencias": { "Perkins": "A002396" },
+      "aplicaciones": ["Perkins"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1328": {
+      "codigo": "1328",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Simms",
+      "referencias": { "Simms": "15244631" },
+      "aplicaciones": ["Simms"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1329": {
+      "codigo": "1329",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Scania Vabis",
+      "referencias": { "CAV": "7092-86" },
+      "aplicaciones": ["Scania Vabis"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1330": {
+      "codigo": "1330",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Volvo",
+      "referencias": { "CAV": "7092-86" },
+      "aplicaciones": ["Volvo"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1331": {
+      "codigo": "1331",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Leyland",
+      "referencias": { "CAV": "7092-291" },
+      "aplicaciones": ["Leyland"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1331/1": {
+      "codigo": "1331/1",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Leyland 5 telas",
+      "referencias": { "CAV": "7092-447A" },
+      "aplicaciones": ["Leyland 5 telas"],
+      "pagina_catalogo": 36
+    },
+
+
+    "1332": {
+      "codigo": "1332",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para Indenor 6 cil.",
+      "aplicaciones": ["Indenor 6 cil."],
+      "pagina_catalogo": 36
+    },
+
+
+    "1333": {
+      "codigo": "1333",
+      "categoria": "Diafragmas para Bombitas Alimentadoras",
+      "descripcion": "Diafragma para John Deere",
+      "aplicaciones": ["John Deere"],
+      "pagina_catalogo": 36
+    }
+  }
+}
