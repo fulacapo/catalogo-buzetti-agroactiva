@@ -57,9 +57,13 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
   // Motor de inferencia (GPU/CPU). Se puede cambiar en vivo (tecla G) porque en
   // algunas PCs viejas uno de los dos crashea (detect: aborted) y el otro anda.
   const visionRef = useRef<any>(null);
-  const delegateRef = useRef<'GPU' | 'CPU'>('GPU');
+  // CPU por defecto: el delegado GPU CUELGA Chrome entero en placas viejas con
+  // WebGL por software (el detectForVideo nunca vuelve). CPU, si falla, tira un
+  // error que SÍ se puede atrapar (no congela). GPU sólo por prueba manual (G).
+  const delegateRef = useRef<'GPU' | 'CPU'>('CPU');
   const buildingRef = useRef(false);
-  const recoveredRef = useRef(false); // ya intentó el auto-cambio una vez
+  const abortCountRef = useRef(0);   // crashes seguidos del motor
+  const gaveUpRef = useRef(false);   // se rindió: no detectar más (no trabar)
 
   // (Re)crea el HandLandmarker con el delegado actual.
   const buildLandmarker = useCallback(async () => {
@@ -80,10 +84,12 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     }
   }, []);
 
-  // Cambiar GPU<->CPU manualmente (tecla G).
+  // Cambiar GPU<->CPU manualmente (tecla G). Reinicia los contadores para
+  // darle otra chance al motor elegido.
   const cycleDelegate = useCallback(() => {
     delegateRef.current = delegateRef.current === 'GPU' ? 'CPU' : 'GPU';
-    recoveredRef.current = true; // si lo cambia a mano, no auto-cambiar después
+    abortCountRef.current = 0;
+    gaveUpRef.current = false;
     buildLandmarker();
   }, [buildLandmarker]);
 
@@ -302,31 +308,31 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
       const v = videoRef.current;
       const now = performance.now();
 
-      // No detectar mientras se (re)construye el motor o si no hay landmarker.
-      if (landmarkerRef.current && !buildingRef.current &&
+      // No detectar mientras se (re)construye el motor, si no hay landmarker, o
+      // si ya se rindió (para no trabar la CPU con crashes en bucle).
+      if (landmarkerRef.current && !buildingRef.current && !gaveUpRef.current &&
           now - lastInferenceTime >= INFERENCE_INTERVAL_MS && v.readyState >= 2 && v.videoWidth > 0) {
         if (lastVideoTime !== v.currentTime) {
           lastVideoTime = v.currentTime;
           try {
             const results = landmarkerRef.current.detectForVideo(v, now);
             processLandmarks(results);
+            abortCountRef.current = 0; // funcionó: reset
             setD({
               videoW: v.videoWidth, videoH: v.videoHeight,
               frames: diagRef.current.frames + 1,
               hands: results.landmarks.length,
             });
           } catch (e: any) {
-            setD({ err: 'detect(' + delegateRef.current + '): ' + (e?.message || e) }, true);
-            // Auto-recuperación: si el motor crashea (aborted), probar el OTRO
-            // motor una vez. Si ya se intentó, dejar de detectar para no spamear.
-            if (!recoveredRef.current && !buildingRef.current) {
-              recoveredRef.current = true;
-              delegateRef.current = delegateRef.current === 'GPU' ? 'CPU' : 'GPU';
-              setD({ status: 'reintentando con ' + delegateRef.current }, true);
-              lastVideoTime = -1;
-              buildLandmarker();
-            } else if (!landmarkerRef.current) {
-              // ambos fallaron: frenar el intento, ya se mostró el error.
+            // El motor crasheó (aborted). NO cambiamos a GPU solos (GPU CUELGA
+            // Chrome en esta clase de placas). Tras varios crashes, nos rendimos:
+            // la app sigue 100% usable con teclado/mouse.
+            abortCountRef.current += 1;
+            if (abortCountRef.current >= 6) {
+              gaveUpRef.current = true;
+              setD({ status: 'gestos no disponibles', err: 'motor ' + delegateRef.current + ' inestable (' + (e?.message || e) + '). Usá teclado/mouse o probá tecla G.' }, true);
+            } else {
+              setD({ err: 'detect(' + delegateRef.current + '): ' + (e?.message || e) }, true);
             }
           }
           lastInferenceTime = now;
