@@ -12,9 +12,11 @@ const opts = (delegate: 'GPU' | 'CPU') => ({
   },
   runningMode: 'VIDEO' as const,
   numHands: 1,
-  minHandDetectionConfidence: 0.6,
-  minHandPresenceConfidence: 0.6,
-  minTrackingConfidence: 0.6,
+  // Umbral algo más bajo: en PCs viejas + CPU la detección es más débil; queremos
+  // que tome la mano con facilidad bajo la iluminación de la feria.
+  minHandDetectionConfidence: 0.5,
+  minHandPresenceConfidence: 0.5,
+  minTrackingConfidence: 0.5,
 });
 
 export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | null>, enabled = true) {
@@ -53,12 +55,16 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
 
         if (!active) return;
 
+        // FORZAMOS CPU: en la GPU integrada vieja de Windows 7, Chrome suele
+        // tener la aceleración deshabilitada y el delegado GPU "inicia" pero
+        // NO detecta nada (falla silenciosa). CPU no necesita WebGL y anda
+        // siempre, aunque un poco más lento.
         let landmarker;
         try {
-          landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
-        } catch (gpuErr) {
-          console.warn("Delegado GPU falló, usando CPU:", gpuErr);
           landmarker = await HandLandmarker.createFromOptions(vision, opts("CPU"));
+        } catch (cpuErr) {
+          console.warn("Delegado CPU falló, intentando GPU:", cpuErr);
+          landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
         }
 
         if (!active) return;
