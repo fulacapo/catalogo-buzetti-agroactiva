@@ -54,38 +54,50 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     if (push) setDiag({ ...diagRef.current });
   };
 
+  // Motor de inferencia (GPU/CPU). Se puede cambiar en vivo (tecla G) porque en
+  // algunas PCs viejas uno de los dos crashea (detect: aborted) y el otro anda.
+  const visionRef = useRef<any>(null);
+  const delegateRef = useRef<'GPU' | 'CPU'>('GPU');
+  const buildingRef = useRef(false);
+  const recoveredRef = useRef(false); // ya intentó el auto-cambio una vez
+
+  // (Re)crea el HandLandmarker con el delegado actual.
+  const buildLandmarker = useCallback(async () => {
+    if (!visionRef.current || buildingRef.current) return;
+    buildingRef.current = true;
+    try {
+      try { landmarkerRef.current?.close(); } catch { /* ignore */ }
+      landmarkerRef.current = null;
+      setD({ status: 'cargando motor ' + delegateRef.current }, true);
+      landmarkerRef.current = await HandLandmarker.createFromOptions(
+        visionRef.current, opts(delegateRef.current)
+      );
+      setD({ status: 'modelo listo', delegate: delegateRef.current, err: '' }, true);
+    } catch (e: any) {
+      setD({ status: 'ERROR motor', err: (delegateRef.current + ': ' + (e?.message || e)) }, true);
+    } finally {
+      buildingRef.current = false;
+    }
+  }, []);
+
+  // Cambiar GPU<->CPU manualmente (tecla G).
+  const cycleDelegate = useCallback(() => {
+    delegateRef.current = delegateRef.current === 'GPU' ? 'CPU' : 'GPU';
+    recoveredRef.current = true; // si lo cambia a mano, no auto-cambiar después
+    buildLandmarker();
+  }, [buildLandmarker]);
+
   // Initialize MediaPipe HandLandmarker
   useEffect(() => {
     let active = true;
-
     async function init() {
       try {
-        // Cargar el motor WASM y el modelo desde rutas LOCALES (sin internet).
-        // Crítico para ferias como Agroactiva donde no hay conexión confiable.
-        const vision = await FilesetResolver.forVisionTasks(
-          "/mediapipe/wasm"
-        );
-
+        // WASM + modelo LOCALES (sin internet).
+        const vision = await FilesetResolver.forVisionTasks("/mediapipe/wasm");
         if (!active) return;
-
-        // FORZAMOS CPU: en la GPU integrada vieja de Windows 7, Chrome suele
-        // tener la aceleración deshabilitada y el delegado GPU "inicia" pero
-        // NO detecta nada (falla silenciosa). CPU no necesita WebGL y anda
-        // siempre, aunque un poco más lento.
-        let landmarker;
-        let usedDelegate = 'CPU';
-        try {
-          landmarker = await HandLandmarker.createFromOptions(vision, opts("CPU"));
-        } catch (cpuErr: any) {
-          console.warn("Delegado CPU falló, intentando GPU:", cpuErr);
-          setD({ err: 'CPU fallo: ' + (cpuErr?.message || cpuErr) }, true);
-          landmarker = await HandLandmarker.createFromOptions(vision, opts("GPU"));
-          usedDelegate = 'GPU';
-        }
-
+        visionRef.current = vision;
+        await buildLandmarker();
         if (!active) return;
-        landmarkerRef.current = landmarker;
-        setD({ status: 'modelo listo', delegate: usedDelegate }, true);
         setIsInitializing(false);
       } catch (err: any) {
         console.error("Failed to initialize hand tracking:", err);
@@ -94,16 +106,12 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
         setIsInitializing(false);
       }
     }
-
     init();
-
     return () => {
       active = false;
-      if (landmarkerRef.current) {
-        landmarkerRef.current.close();
-      }
+      if (landmarkerRef.current) { try { landmarkerRef.current.close(); } catch {} }
     };
-  }, []);
+  }, [buildLandmarker]);
 
   // Detect gestures based on landmarks
   const processLandmarks = useCallback((result: HandLandmarkerResult) => {
@@ -289,12 +297,14 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     }
 
     function predictWebcam() {
-      if (!videoRef.current || !landmarkerRef.current || !active) return;
+      if (!videoRef.current || !active) { animationFrameRef.current = requestAnimationFrame(predictWebcam); return; }
 
       const v = videoRef.current;
       const now = performance.now();
 
-      if (now - lastInferenceTime >= INFERENCE_INTERVAL_MS && v.readyState >= 2 && v.videoWidth > 0) {
+      // No detectar mientras se (re)construye el motor o si no hay landmarker.
+      if (landmarkerRef.current && !buildingRef.current &&
+          now - lastInferenceTime >= INFERENCE_INTERVAL_MS && v.readyState >= 2 && v.videoWidth > 0) {
         if (lastVideoTime !== v.currentTime) {
           lastVideoTime = v.currentTime;
           try {
@@ -306,7 +316,18 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
               hands: results.landmarks.length,
             });
           } catch (e: any) {
-            setD({ err: 'detect: ' + (e?.message || e) });
+            setD({ err: 'detect(' + delegateRef.current + '): ' + (e?.message || e) }, true);
+            // Auto-recuperación: si el motor crashea (aborted), probar el OTRO
+            // motor una vez. Si ya se intentó, dejar de detectar para no spamear.
+            if (!recoveredRef.current && !buildingRef.current) {
+              recoveredRef.current = true;
+              delegateRef.current = delegateRef.current === 'GPU' ? 'CPU' : 'GPU';
+              setD({ status: 'reintentando con ' + delegateRef.current }, true);
+              lastVideoTime = -1;
+              buildLandmarker();
+            } else if (!landmarkerRef.current) {
+              // ambos fallaron: frenar el intento, ya se mostró el error.
+            }
           }
           lastInferenceTime = now;
         }
@@ -337,5 +358,5 @@ export function useHandTracking(cursorRef?: React.RefObject<HTMLDivElement | nul
     };
   }, [enabled, isInitializing, error, processLandmarks]);
 
-  return { videoRef, gesture, isInitializing, error, handPos, diag };
+  return { videoRef, gesture, isInitializing, error, handPos, diag, cycleDelegate };
 }

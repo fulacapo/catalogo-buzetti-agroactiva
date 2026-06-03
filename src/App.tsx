@@ -38,7 +38,7 @@ export default function App() {
   const [showDiag, setShowDiag] = useState(false); // panel de diagnóstico (tecla D)
   const cursorRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const { videoRef, gesture, isInitializing, error, handPos, diag } = useHandTracking(cursorRef, cameraEnabled);
+  const { videoRef, gesture, isInitializing, error, handPos, diag, cycleDelegate } = useHandTracking(cursorRef, cameraEnabled);
 
   // Load products whenever the brand changes
   useEffect(() => {
@@ -166,6 +166,8 @@ export default function App() {
       touch();
       // Tecla D: muestra/oculta el panel de diagnóstico de cámara/gestos.
       if (e.key === 'd' || e.key === 'D') { setShowDiag(s => !s); return; }
+      // Tecla G: cambia el motor de gestos GPU<->CPU (si uno crashea, probar el otro).
+      if (e.key === 'g' || e.key === 'G') { setShowDiag(true); cycleDelegate(); return; }
       // Con el explorador abierto: Esc/Backspace cierra; las teclas de zoom
       // (1/2/3/0) las maneja el propio FeaturedExplorer.
       if (showFeatured) {
@@ -718,10 +720,12 @@ export default function App() {
           </div>
           {diag.err && <div className="mt-1.5 text-red-400 max-w-[560px] break-words">⚠ {diag.err}</div>}
           <div className="mt-1.5 text-[11px] text-slate-400">
-            {diag.frames === 0 ? 'No se analizan frames → la cámara no entrega imagen.'
+            {diag.err.includes('abort') || diag.err.includes('detect') ? 'El motor crasheó → probá la tecla G para cambiar GPU/CPU.'
+              : diag.frames === 0 ? 'No se analizan frames → la cámara no entrega imagen.'
               : diag.hands === 0 ? 'Analiza frames pero no ve manos → acercá la mano, mejorá la luz.'
               : 'Detectando manos ✓'}
           </div>
+          <div className="mt-1 text-[11px] text-cyan-400/70">Tecla G = cambiar motor (GPU/CPU) · D = ocultar</div>
         </div>
       )}
     </div>
